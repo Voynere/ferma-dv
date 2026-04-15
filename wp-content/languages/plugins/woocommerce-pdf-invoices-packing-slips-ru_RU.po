@@ -1,0 +1,1236 @@
+# Translation of Plugins - PDF Invoices &amp; Packing Slips for WooCommerce - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - PDF Invoices &amp; Packing Slips for WooCommerce - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2025-09-30 15:58:09+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - PDF Invoices &amp; Packing Slips for WooCommerce - Stable (latest release)\n"
+
+#: includes/Tables/NumberStoreListTable.php:137
+msgid "Deleted"
+msgstr "Удаленный"
+
+#: includes/Admin.php:1177
+msgid "Hour"
+msgstr "Час"
+
+#: includes/Admin.php:1181
+msgid "Minute"
+msgstr "Минута"
+
+#: includes/Admin.php:1208
+msgid "Notes"
+msgstr "Примечания"
+
+#: includes/Admin.php:1589
+msgid "Invalid security token."
+msgstr "Токен безопасности недействителен."
+
+#: includes/Admin.php:1601
+msgid "Invalid order ID."
+msgstr "Неверный ID заказа."
+
+#: includes/Admin.php:1607
+msgid "Invalid order."
+msgstr "Ошибка в заказе."
+
+#: includes/Assets.php:197 includes/SetupWizard.php:138
+msgid "Loading"
+msgstr "Загрузка"
+
+#: ubl/Settings/TaxesSettings.php:557
+msgid "Dismiss"
+msgstr "Отклонить"
+
+#: includes/Settings/SettingsGeneral.php:287
+#: views/setup-wizard/shop-name.php:21
+msgid "Select a country"
+msgstr "Выбрать страну"
+
+#: includes/Settings/SettingsGeneral.php:513
+msgid "Display Settings"
+msgstr "Настройки отображения"
+
+#: includes/Settings/SettingsUbl.php:89
+msgid "documentation"
+msgstr "документация"
+
+#: ubl/Settings/TaxesSettings.php:124
+msgid "Scheme"
+msgstr "Схема"
+
+#: ubl/Settings/TaxesSettings.php:125
+msgid "Category"
+msgstr "Рубрика"
+
+#: includes/Settings/SettingsDebug.php:777
+msgid "Warning:"
+msgstr "Внимание:"
+
+#: includes/Documents/Invoice.php:585
+msgid "Order details"
+msgstr "Детали заказа"
+
+#: woocommerce-pdf-invoices-packingslips.php:666
+msgid "Dismiss this notice"
+msgstr "Отклонить это уведомление"
+
+#: views/advanced-status.php:12
+msgid "Current"
+msgstr "Текущий"
+
+#: includes/Settings/SettingsDebug.php:1562
+msgid "Invalid request"
+msgstr "Неверный запрос"
+
+#: views/advanced-status.php:11
+msgid "Plugin Name"
+msgstr "Название плагина"
+
+#: views/advanced-status.php:42 views/advanced-status.php:49
+msgid "Active"
+msgstr "Активен"
+
+#: views/advanced-status.php:49
+msgid "Inactive"
+msgstr "Неактивна"
+
+#: views/advanced-status.php:91
+msgid "Configuration"
+msgstr "Конфигурация"
+
+#: views/advanced-status.php:141
+msgid "Document"
+msgstr "Документ"
+
+#: includes/SetupWizard.php:200
+msgid "Setup Wizard"
+msgstr "Мастер установки"
+
+#: views/settings-page.php:5
+msgid "Action failed. Please refresh the page and retry."
+msgstr "Действие не удалось. Обновите страницу и попробуйте снова."
+
+#: ubl/Settings/TaxesSettings.php:283
+msgid "None"
+msgstr "Нет"
+
+#: includes/Assets.php:279 ubl/Settings/TaxesSettings.php:184
+#: ubl/Settings/TaxesSettings.php:189 ubl/Settings/TaxesSettings.php:194
+#: ubl/Settings/TaxesSettings.php:226 ubl/Settings/TaxesSettings.php:233
+#: ubl/Settings/TaxesSettings.php:240
+msgid "Code"
+msgstr "Код"
+
+#: includes/Assets.php:280
+msgid "New"
+msgstr "Добавить"
+
+#: includes/Documents/Invoice.php:410 includes/Settings/SettingsDebug.php:879
+#: includes/Settings/SettingsUbl.php:67
+msgid "Note"
+msgstr "Примечание"
+
+#: ubl/Settings/TaxesSettings.php:119
+msgid "Country code"
+msgstr "Код страны"
+
+#: ubl/Settings/TaxesSettings.php:126
+msgid "Reason"
+msgstr "Причина"
+
+#: includes/Settings.php:188
+msgid "Taxes"
+msgstr "Налоги"
+
+#: includes/Documents/Invoice.php:643
+msgid "Format"
+msgstr "Формат"
+
+#: includes/Documents/Invoice.php:731
+msgid "Admin"
+msgstr "Админ"
+
+#: includes/Main.php:1324 includes/Main.php:1355
+msgid "User"
+msgstr "Пользователя"
+
+#. translators: number of days
+#: includes/Documents/Invoice.php:329
+msgid "%s days"
+msgstr "%s дня"
+
+#: views/upgrade-table.php:159
+msgid "Buy now"
+msgstr "Купить сейчас"
+
+#: includes/Documents/Invoice.php:739 includes/Settings.php:195
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: includes/Settings/SettingsDebug.php:1456
+msgid "Numbers"
+msgstr "Числа"
+
+#: includes/Tables/NumberStoreListTable.php:115
+msgid "unknown"
+msgstr "неизвестный"
+
+#: includes/Tables/NumberStoreListTable.php:161
+msgid "Number"
+msgstr "Число"
+
+#: includes/Tables/NumberStoreListTable.php:162
+msgid "Type"
+msgstr "Тип"
+
+#: includes/Tables/NumberStoreListTable.php:165
+msgid "Order"
+msgstr "Сортировка"
+
+#: includes/Tables/NumberStoreListTable.php:166
+msgid "Order Status"
+msgstr "Статус заказа"
+
+#: views/advanced-status.php:210
+msgid "Path"
+msgstr "Контур"
+
+#: views/advanced-tools.php:273 views/advanced-tools.php:321
+msgid "Select"
+msgstr "Выбрать"
+
+#: views/advanced-numbers.php:70 views/advanced-tools.php:297
+#: views/advanced-tools.php:346
+msgid "To:"
+msgstr "До:"
+
+#: views/advanced-tools.php:325
+msgid "All"
+msgstr "Все"
+
+#: ubl/Settings/TaxesSettings.php:120
+msgid "State code"
+msgstr "Код области"
+
+#: ubl/Settings/TaxesSettings.php:121
+msgid "Postcode / ZIP"
+msgstr "Почтовый индекс"
+
+#: ubl/Settings/TaxesSettings.php:122
+msgid "City"
+msgstr "Город"
+
+#: ubl/Settings/TaxesSettings.php:272
+msgid "Default"
+msgstr "По умолчанию"
+
+#: views/advanced-tools.php:197
+msgid "Reset Settings"
+msgstr "Сбросить настройки"
+
+#: views/advanced-numbers.php:89 views/advanced-tools.php:211
+msgid "Reset"
+msgstr "Сбросить"
+
+#: includes/Settings/SettingsDebug.php:794
+#: includes/Settings/SettingsDebug.php:1085
+msgid "Full"
+msgstr "По ширине"
+
+#: includes/Settings/SettingsDebug.php:1081
+msgid "Logged in"
+msgstr "Авторизован"
+
+#: includes/Settings.php:200
+msgid "Upgrade"
+msgstr "Обновить"
+
+#: views/upgrade-table.php:97
+msgid "Upgrade now"
+msgstr "Обновить сейчас"
+
+#: includes/Settings/SettingsUpgrade.php:91
+#: includes/Settings/SettingsUpgrade.php:101
+#: includes/Settings/SettingsUpgrade.php:111 views/upgrade-table.php:74
+msgid "Learn more"
+msgstr "Подробнее"
+
+#: views/upgrade-table.php:22
+msgid "Premium Templates"
+msgstr "Премиум шаблоны"
+
+#: includes/Documents/Invoice.php:511
+msgid "Manually"
+msgstr "Вручную"
+
+#: includes/Settings/SettingsDebug.php:722
+msgid "Debug"
+msgstr "Отладка"
+
+#: includes/Assets.php:248
+msgid "Download"
+msgstr "Скачать"
+
+#: includes/Settings/SettingsDebug.php:1455
+msgid "Tools"
+msgstr "Инструменты"
+
+#: views/advanced-tools.php:171
+msgid "Export"
+msgstr "Экспорт"
+
+#: views/advanced-tools.php:187
+msgid "Import"
+msgstr "Импорт"
+
+#: views/advanced-tools.php:157
+msgid "Export Settings"
+msgstr "Настройки экспорта"
+
+#: includes/Assets.php:114
+msgid "Preview"
+msgstr "Предпросмотр"
+
+#: views/advanced-status.php:142
+msgid "Enabled"
+msgstr "Включено"
+
+#. Plugin Name of the plugin
+#: woocommerce-pdf-invoices-packingslips.php views/settings-page.php:25
+#: woocommerce-pdf-invoices-packingslips.php:654
+#: woocommerce-pdf-invoices-packingslips.php:728
+msgid "PDF Invoices & Packing Slips for WooCommerce"
+msgstr "PDF Invoices & Packing Slips for WooCommerce"
+
+#: views/setup-wizard/display-options.php:13
+msgid "Shipping address"
+msgstr "Адрес доставки"
+
+#: views/setup-wizard/display-options.php:34
+msgid "Email address"
+msgstr "Email-адрес"
+
+#: views/setup-wizard/display-options.php:44
+msgid "Phone number"
+msgstr "Номер телефона"
+
+#: views/setup-wizard/display-options.php:54
+msgid "Invoice date"
+msgstr "Дата счёта"
+
+#: views/setup-wizard/display-options.php:75
+msgid "Invoice number"
+msgstr "Номер счёта"
+
+#: includes/Assets.php:179
+msgid "Document settings"
+msgstr "Настройки документа"
+
+#: includes/Settings.php:450 includes/Tables/NumberStoreListTable.php:164
+msgid "Date"
+msgstr "Дата"
+
+#: includes/Settings.php:272
+msgid "Order not found!"
+msgstr "Заказ не найден!"
+
+#. Plugin URI of the plugin
+#: woocommerce-pdf-invoices-packingslips.php
+msgid "https://wpovernight.com/downloads/woocommerce-pdf-invoices-packing-slips-bundle/"
+msgstr "https://wpovernight.com/downloads/woocommerce-pdf-invoices-packing-slips-bundle/"
+
+#. Author of the plugin
+#: woocommerce-pdf-invoices-packingslips.php
+msgid "WP Overnight"
+msgstr "WP Overnight"
+
+#: views/advanced-status.php:110 views/advanced-status.php:117
+#: views/advanced-status.php:151 views/advanced-status.php:176
+#: views/advanced-status.php:197
+msgid "Yes"
+msgstr "Да"
+
+#: includes/Settings/SettingsGeneral.php:497
+msgid "Custom"
+msgstr "Пользовательский"
+
+#. translators: %s: document name
+#: includes/Documents/OrderDocument.php:972
+msgid "%s Date:"
+msgstr "%s Дата:"
+
+#: views/advanced-status.php:92
+msgid "Required"
+msgstr "Обязательное"
+
+#: includes/Settings/SettingsDebug.php:1350
+msgid "Writable"
+msgstr "Доступна для записи"
+
+#: includes/Settings/SettingsDebug.php:1351
+msgid "Not writable"
+msgstr "Недоступна для записи"
+
+#: includes/Main.php:1491
+msgid "my account"
+msgstr "моя учётная запись"
+
+#: includes/Admin.php:1225
+msgid "Cancel"
+msgstr "Отмена"
+
+#: includes/Admin.php:1224
+msgid "Save changes"
+msgstr "Записать изменения"
+
+#: includes/Settings/SettingsGeneral.php:166
+msgid "Logo height"
+msgstr "Высота логотипа"
+
+#: includes/Documents/Invoice.php:353
+msgid "More information"
+msgstr "Дополнительная информация"
+
+#: includes/Documents/Invoice.php:351
+msgid "Warning!"
+msgstr "Внимание!"
+
+#: includes/Documents/Invoice.php:315
+#: includes/Documents/OrderDocumentMethods.php:1345
+#: views/setup-wizard/display-options.php:63
+msgid "Order Date"
+msgstr "Дата заказа"
+
+#: includes/Documents/Invoice.php:261 includes/Documents/Invoice.php:313
+#: includes/Documents/Invoice.php:345 includes/Documents/PackingSlip.php:134
+#: views/advanced-status.php:121 views/advanced-status.php:125
+#: views/advanced-status.php:151 views/advanced-status.php:176
+#: views/setup-wizard/display-options.php:20
+#: views/setup-wizard/display-options.php:61
+#: views/setup-wizard/display-options.php:82
+msgid "No"
+msgstr "Нет"
+
+#: includes/Documents/Invoice.php:347 views/setup-wizard/display-options.php:84
+msgid "Order Number"
+msgstr "Номер заказа"
+
+#: includes/Documents/Invoice.php:352
+msgid "Using the Order Number as invoice number is not recommended as this may lead to gaps in the invoice number sequence (even when order numbers are sequential)."
+msgstr "Использование номера заказа в качестве номера счета не рекомендуется, поскольку это может привести к пробелам в последовательности номеров счетов-(даже если номера заказов являются последовательными)."
+
+#: includes/Documents/Invoice.php:239
+msgid "Disable for:"
+msgstr "Отключить для:"
+
+#: includes/Documents/Invoice.php:248
+msgid "Select one or more statuses"
+msgstr "Выберите один или более статусов"
+
+#: views/setup-wizard/show-action-buttons.php:5
+msgid "(You can always change this setting later via the Screen Options menu)"
+msgstr "(Вы всегда сможете изменить эти настройки позже через экран Настройка меню)"
+
+#: views/setup-wizard/show-action-buttons.php:30
+msgid "Show action buttons"
+msgstr "Показать кнопки действия"
+
+#: includes/SetupWizard.php:79 views/setup-wizard/show-action-buttons.php:3
+msgid "Action buttons"
+msgstr "Кнопки действия"
+
+#: views/setup-wizard/show-action-buttons.php:4
+msgid "Would you like to display the action buttons in your WooCommerce order list? The action buttons allow you to manually create a PDF."
+msgstr "Вы хотите отобразить кнопки действия в своем списке заказов WooCommerce? Кнопки действия позволяют вам вручную создавать PDF."
+
+#: includes/Settings/SettingsGeneral.php:109
+msgid "Test mode"
+msgstr "Тестовый режим"
+
+#: includes/Admin.php:1573
+msgid "DEBUG output enabled"
+msgstr "DEBUG вывод включен"
+
+#: includes/Settings/SettingsGeneral.php:117
+msgid "With test mode enabled, any document generated will always use the latest settings, rather than using the settings as configured at the time the document was first created."
+msgstr "При включенном тестовом режиме, любой сгенерированный документ всегда будет использовать самые последние настройки, а не те, которые были настроены во время первого создания документа."
+
+#: includes/Documents/Invoice.php:541
+msgid "Always use most current settings"
+msgstr "Всегда используйте самые свежие настройки"
+
+#: includes/Documents/Invoice.php:549
+msgid "When enabled, the document will always reflect the most current settings (such as footer text, document name, etc.) rather than using historical settings."
+msgstr "Когда активна, документ всегда будет отражать самую свежую настройку( такую как текст подвала, имя документа, и т.д.) вместо использования ранее установленных настроек.  "
+
+#: includes/Admin.php:175
+msgid "Jumpstart the plugin by following our wizard!"
+msgstr "Быстро начните использование плагина с помощью нашего мастера!"
+
+#: includes/Admin.php:176 views/advanced-tools.php:150
+#: views/advanced-tools.php:152
+msgid "Run the Setup Wizard"
+msgstr "Запустить мастера настройки"
+
+#: includes/Admin.php:176
+msgid "I am the wizard"
+msgstr "Я - мастер"
+
+#: includes/Assets.php:83
+msgid "Are you sure you want to delete this document? This cannot be undone."
+msgstr "Вы точно хотите удалить этот документ? Это действие не может быть отменено."
+
+#: wpo-ips-functions.php:398
+msgid "Error creating PDF, please contact the site owner."
+msgstr "Ошибка создания PDF, пожалуйста, свяжитесь с владельцем сайта."
+
+#: includes/Admin.php:354 includes/Documents/Invoice.php:314
+#: includes/Main.php:1270 views/setup-wizard/display-options.php:62
+msgid "Invoice Date"
+msgstr "Дата счета"
+
+#. translators: number of days
+#: includes/Settings/SettingsDebug.php:913
+msgid "every %s days"
+msgstr "каждые %s дней"
+
+#: includes/Settings/SettingsDebug.php:906
+msgid "Enable automatic cleanup"
+msgstr "Включить автоматическую очистку"
+
+#. translators: %s: Document type
+#: includes/Frontend.php:188
+msgid "Download %s (PDF)"
+msgstr "Скачать %s (PDF)"
+
+#: includes/SetupWizard.php:83
+msgid "Ready!"
+msgstr "Готово!"
+
+#: includes/SetupWizard.php:63 views/setup-wizard/logo.php:3
+msgid "Your logo"
+msgstr "Ваш логотип"
+
+#: languages/strings.php:11
+msgid "Send email"
+msgstr "Отправить email"
+
+#: includes/SetupWizard.php:258
+msgid "Next"
+msgstr "Следующий"
+
+#: includes/SetupWizard.php:253
+msgid "Previous"
+msgstr "Предыдущий"
+
+#: includes/SetupWizard.php:75 views/setup-wizard/paper-format.php:3
+msgid "Paper format"
+msgstr "Формат бумаги"
+
+#: includes/SetupWizard.php:67
+msgid "Attachments"
+msgstr "Вложения"
+
+#: includes/SetupWizard.php:71 views/setup-wizard/display-options.php:3
+msgid "Display options"
+msgstr "Настройки отображения"
+
+#: includes/SetupWizard.php:259
+msgid "Skip this step"
+msgstr "Пропустить этот шаг"
+
+#: views/setup-wizard/good-to-go.php:6
+msgid "Happy selling!"
+msgstr "Высоких продаж!"
+
+#: includes/SetupWizard.php:261
+msgid "Finish"
+msgstr "Завершить"
+
+#: includes/Admin.php:503
+msgid "Send order email"
+msgstr "Отправить письмо с заказом"
+
+#: views/setup-wizard/attach-to.php:3
+msgid "Attach to..."
+msgstr "Прикрепить к..."
+
+#: views/setup-wizard/shop-name.php:3
+msgid "Enter your shop name"
+msgstr "Введите название своего магазина"
+
+#: includes/Admin.php:576
+msgid "Save order & send email"
+msgstr "Сохранить заказ и отправить email"
+
+#. translators: %s: email title
+#: includes/Admin.php:1365
+msgid "%s email notification manually sent."
+msgstr "%s email-уведомлений отправлено вручную."
+
+#: views/setup-wizard/shop-name.php:4
+msgid "Lets quickly setup your invoice. Please enter the name and address of your shop in the fields on the right."
+msgstr "Давайте быстро настроем ваш счёт. Пожалуйста, укажите имя и адрес вашего магазина в полях справа."
+
+#: views/setup-wizard/paper-format.php:4
+msgid "Select the paper format for your invoice."
+msgstr "Выберите формат бумаги для вашего счёта."
+
+#: views/setup-wizard/logo.php:4
+msgid "Set the header image that will display on your invoice."
+msgstr "Укажите изображение заголовка, которые будет отображаться в ваших счетах."
+
+#: views/setup-wizard/good-to-go.php:3
+msgid "You are good to go!"
+msgstr "Вы готовы начать!"
+
+#: views/setup-wizard/attach-to.php:4
+msgid "Select to which emails you would like to attach your invoice."
+msgstr "Выберите какой email вы хотите указать в счёте."
+
+#: views/setup-wizard/good-to-go.php:4
+msgid "If you have any questions please have a look at our documentation:"
+msgstr "Если у вас есть вопросы, пожалуйста, ознакомьтесь с нашей документацией:"
+
+#: views/setup-wizard/display-options.php:4
+msgid "Select some additional display options for your invoice."
+msgstr "Выберите дополнительные настройки отображения для счета."
+
+#: includes/Admin.php:133
+msgid "Already did!"
+msgstr "Уже сделал!"
+
+#: includes/Admin.php:132
+msgid "Yes you deserve it!"
+msgstr "Да, вы этого заслуживаете!"
+
+#: includes/Admin.php:134
+msgid "Actually, I have a complaint..."
+msgstr "На самом деле, у меня есть жалоба..."
+
+#. translators: rounded count
+#: includes/Admin.php:125
+msgid "Wow, you have created more than %d invoices with our plugin!"
+msgstr "Ничего себе, вы создали более %d счетов с нашим плагином!"
+
+#: includes/Admin.php:130
+msgid "It would mean a lot to us if you would quickly give our plugin a 5-star rating. Help us spread the word and boost our motivation!"
+msgstr "Это было бы очень важно для нас, если бы вы оценили наш плагин на 5 звезд. Помогите распространению и повысьте нашу мотивацию!"
+
+#: includes/Settings/SettingsGeneral.php:139
+msgid "Enable font subsetting"
+msgstr "Включить подмножество шрифтов"
+
+#: includes/Settings/SettingsDebug.php:855
+msgid "Calculate document numbers (slow)"
+msgstr "Вычислять номера документов (медленно)"
+
+#: includes/Settings/SettingsGeneral.php:145
+msgid "Font subsetting can reduce file size by only including the characters that are used in the PDF, but limits the ability to edit PDF files later. Recommended if you're using an Asian font."
+msgstr "Подмножество шрифтов может уменьшить размер файла, включая только символы, которые используются в PDF, но ограничивает возможность редактирования файлов PDF позже. Рекомендуется, если вы используете азиатский шрифт."
+
+#: includes/Main.php:1176
+msgid "Nothing to delete!"
+msgstr "Нечего удалять!"
+
+#: views/advanced-tools.php:49 views/advanced-tools.php:53
+msgid "Remove temporary files"
+msgstr "Удалить временные файлы"
+
+#: includes/Admin.php:133 includes/Main.php:856
+#: includes/Settings/SettingsDebug.php:1303
+#: includes/Settings/SettingsGeneral.php:665
+#: views/attachment-settings-hint.php:12 views/extensions.php:135
+#: views/promo.php:34 woocommerce-pdf-invoices-packingslips.php:363
+#: woocommerce-pdf-invoices-packingslips.php:422
+#: woocommerce-pdf-invoices-packingslips.php:460
+#: woocommerce-pdf-invoices-packingslips.php:595
+msgid "Hide this message"
+msgstr "Скрыть это сообщение"
+
+#: views/extensions.php:74
+msgid "Get WooCommerce Smart Reminder Emails"
+msgstr "Получить WooCommerce Smart Reminder Emails"
+
+#: views/extensions.php:70
+msgid "Fully <b>WPML Compatible</b> – emails will be automatically sent in the order language."
+msgstr "Полностью <b>совместим с WPML</b> – письма будут автоматически отправлены на языке заказа."
+
+#: views/extensions.php:72
+msgid "Integrates seamlessly with the PDF Invoices & Packing Slips plugin"
+msgstr "Бесшовно интегрируется с плагином PDF Invoices & Packing Slips"
+
+#: views/extensions.php:71
+msgid "<b>Super versatile!</b> Can be used for any kind of reminder email (review reminders, repeat purchases)"
+msgstr "<b>Супер универсальный!</b> Может использоваться для любого типа напоминаний электронной почты (просмотр напоминаний, повторные покупки)"
+
+#: includes/Settings.php:128
+msgid "Documentation"
+msgstr "Документация"
+
+#: includes/Settings.php:182
+msgid "Documents"
+msgstr "Документы"
+
+#: includes/Settings.php:129
+msgid "Support Forum"
+msgstr "Форум поддержки"
+
+#: views/advanced-tools.php:25
+msgid "Reinstall fonts"
+msgstr "Переустановить шрифты"
+
+#: includes/Documents/Invoice.php:372
+msgid "Number format"
+msgstr "Формат чисел"
+
+#: includes/Settings/SettingsCallbacks.php:595
+msgid "Save"
+msgstr "Сохранить"
+
+#: includes/Documents/Invoice.php:225 includes/Documents/Invoice.php:663
+#: includes/Documents/PackingSlip.php:191
+msgid "Attach to:"
+msgstr "Прикрепить к:"
+
+#: includes/Documents/Invoice.php:214 includes/Documents/Invoice.php:632
+#: includes/Documents/PackingSlip.php:116
+msgid "Enable"
+msgstr "Включить"
+
+#. translators: %s: tax information
+#: includes/Documents/OrderDocumentMethods.php:987
+msgid "(includes %s)"
+msgstr "(включая %s)"
+
+#: views/extensions.php:65
+msgid "WooCommerce Smart Reminder emails"
+msgstr "WooCommerce Smart Reminder emails"
+
+#: views/extensions.php:15
+msgid "Professional features:"
+msgstr "Профессиональные возможности:"
+
+#: includes/Main.php:371
+msgid "You haven't selected any orders"
+msgstr "Вы не выбрали ни одного заказа"
+
+#: includes/Settings/SettingsDebug.php:263
+msgid "Fonts reinstalled!"
+msgstr "Шрифты переустановлены!"
+
+#: views/extensions.php:29 views/extensions.php:53
+msgid "Upload automatically to dropbox"
+msgstr "Загружает автоматически в dropbox"
+
+#: includes/Documents/Invoice.php:338
+msgid "Display invoice number"
+msgstr "Отобразить номер счета"
+
+#: views/extensions.php:63
+msgid "Automatically send payment reminders to your customers"
+msgstr "Автоматически отправляет напоминание о платеже вашим покупателям"
+
+#: includes/Settings/SettingsGeneral.php:127
+msgid "Extended currency symbol support"
+msgstr "Расширенная поддержка символов валют"
+
+#: includes/Documents/Invoice.php:420
+msgid "Reset invoice number yearly"
+msgstr "Сбрасывать номер счета ежегодно"
+
+#. translators: link
+#: includes/Documents/Invoice.php:608
+msgid "Configure it <a href=\"%s\">here</a>."
+msgstr "Настройте это <a href=\"%s\">здесь</a>."
+
+#: includes/Documents/OrderDocument.php:1835
+msgid "Admin email"
+msgstr "Административный email"
+
+#: includes/Documents/OrderDocument.php:1838
+msgid "Manual email"
+msgstr "Ручной email"
+
+#: includes/Documents/Invoice.php:605
+msgid "Invoice numbers are created by a third-party extension."
+msgstr "Номера счетов задаются сторонним расширением."
+
+#: includes/Settings/SettingsGeneral.php:133
+msgid "Enable this if your currency symbol is not displaying properly"
+msgstr "Включите это, если символ валюты отображается неправильно"
+
+#: views/extensions.php:12
+msgid "Premium PDF Invoice bundle: Everything you need for a perfect invoicing system"
+msgstr "Набор Premium PDF Invoice: Всё, что вам нужно для совершенной системы выставления счетов"
+
+#: includes/Documents/Invoice.php:366
+msgid "This is the number that will be used for the next document. By default, numbering starts from 1 and increases for every new document. Note that if you override this and set it lower than the current/highest number, this could create duplicate numbers!"
+msgstr "Это номер, который будет использоваться для следующего документа. По умолчанию нумерация начинается с 1 и увеличивается для каждого нового документа. Обратите внимание, что если вы переопределите это значение и установите его ниже текущего/самого большого числа, это может создать повторяющиеся номера!"
+
+#: views/extensions.php:68
+msgid "<b>Rich text editor</b> for the email text, including placeholders for data from the order (name, order total, etc)"
+msgstr "<b>Текстовый редактор</b> для текста электронных писем, включая заполнители для данных из заказа (имя, общая сумма заказа и т.д.)"
+
+#. translators: document type
+#: includes/Main.php:523
+msgid "Document of type '%s' for the selected order(s) could not be generated"
+msgstr "Документ типа '%s' для выбранного заказа(ов) не может быть сгенерирован"
+
+#: views/extensions.php:69
+msgid "Configure the exact requirements for sending an email (time after order, order status, payment method)"
+msgstr "Настройте точные требования для отправки email (время после заказа, статус заказа, способ оплаты)"
+
+#: views/extensions.php:67
+msgid "<b>Completely automatic</b> scheduled emails"
+msgstr "<b>Полностью автоматические</b> рассылки по email"
+
+#: includes/Settings/SettingsGeneral.php:157 views/setup-wizard/logo.php:12
+msgid "Select or upload your invoice header/logo"
+msgstr "Выберите или загрузите ваш логотип для использования его в шапке документов"
+
+#: includes/Settings/SettingsGeneral.php:158 views/setup-wizard/logo.php:13
+msgid "Set image"
+msgstr "Установить изображение"
+
+#: includes/Settings/SettingsGeneral.php:159 views/setup-wizard/logo.php:14
+msgid "Remove image"
+msgstr "Удалить изображение"
+
+#: includes/Settings/SettingsGeneral.php:376
+msgid "Footer: terms & conditions, policies, etc."
+msgstr "Подвал: условия, конфиденциальность, политика отношений, и т.д."
+
+#: includes/Documents/Invoice.php:306
+msgid "Display invoice date"
+msgstr "Отображать дату накладной"
+
+#: includes/Documents/Invoice.php:380
+msgid "Prefix"
+msgstr "Префикс"
+
+#: includes/Documents/Invoice.php:389
+msgid "Suffix"
+msgstr "Суффикс"
+
+#: includes/Documents/Invoice.php:398
+msgid "Padding"
+msgstr "Наполнение"
+
+#: includes/Settings/SettingsGeneral.php:390
+msgid "Extra template fields"
+msgstr "Экстра поля шаблона"
+
+#: includes/Settings/SettingsGeneral.php:396
+msgid "Extra field 1"
+msgstr "Экстра поле 1"
+
+#: includes/Settings/SettingsGeneral.php:411
+msgid "Extra field 2"
+msgstr "Экстра поле 2"
+
+#: includes/Settings/SettingsGeneral.php:426
+msgid "Extra field 3"
+msgstr "Экстра поле 3"
+
+#: includes/Settings/SettingsCallbacks.php:539
+msgid "Image resolution"
+msgstr "Разрешение изображения"
+
+#: includes/Settings/SettingsCallbacks.php:46
+msgid "These are used for the (optional) footer columns in the <em>Modern (Premium)</em> template, but can also be used for other elements in your custom template"
+msgstr "Эти поля (по желанию) используются в подвале <em>Modern (Premium)</em> шаблонов, но также могут быть использованы в ваших собственных шаблонах"
+
+#: includes/Admin.php:514
+msgid "Create PDF"
+msgstr "Создать PDF"
+
+#: includes/Admin.php:1178
+msgid "h"
+msgstr "ч"
+
+#: includes/Admin.php:1182
+msgid "m"
+msgstr "м"
+
+#: languages/strings.php:14 wpo-ips-functions.php:1016
+msgid "Product"
+msgstr "Товар"
+
+#: languages/strings.php:15 wpo-ips-functions.php:1017
+msgid "Quantity"
+msgstr "Количество"
+
+#: languages/strings.php:16 wpo-ips-functions.php:1018
+msgid "Price"
+msgstr "Цена"
+
+#: languages/strings.php:12
+msgid "Description"
+msgstr "Описание"
+
+#: includes/Documents/OrderDocument.php:1006
+msgid "Weight:"
+msgstr "Вес:"
+
+#: languages/strings.php:9
+msgid "Payment method"
+msgstr "Метод оплаты"
+
+#: languages/strings.php:10
+msgid "Shipping method"
+msgstr "Метод доставки"
+
+#: includes/Documents/OrderDocumentMethods.php:1018
+msgid "Subtotal"
+msgstr "Промежуточный итог"
+
+#: includes/Documents/OrderDocumentMethods.php:1043
+msgid "Shipping"
+msgstr "Доставка"
+
+#: includes/Documents/OrderDocumentMethods.php:1074
+msgid "Discount"
+msgstr "Скидка"
+
+#: languages/strings.php:5
+msgid "VAT"
+msgstr "НДС"
+
+#: includes/Documents/OrderDocumentMethods.php:1150
+msgid "Total ex. VAT"
+msgstr "Итого без НДС"
+
+#: includes/Documents/OrderDocumentMethods.php:1153 includes/Settings.php:451
+msgid "Total"
+msgstr "Итого"
+
+#: languages/strings.php:6
+msgid "Tax rate"
+msgstr "НДС"
+
+#: includes/Documents/OrderDocumentMethods.php:96
+#: includes/Documents/OrderDocumentMethods.php:206
+msgid "N/A"
+msgstr "Н/Д"
+
+#: includes/Documents/OrderDocument.php:1000
+msgid "Shipping Method:"
+msgstr "Способ доставки:"
+
+#: includes/Documents/OrderDocument.php:985
+msgid "Shipping Address:"
+msgstr "Адрес доставки:"
+
+#: includes/Documents/Invoice.php:92
+msgid "Ship To:"
+msgstr "Доставить в:"
+
+#. translators: Premium Templates link
+#: views/extensions.php:113
+msgid "Check out the Premium PDF Invoice & Packing Slips templates at %s."
+msgstr "Ознакомьтесь с премиум-версиями шаблонов для PDF Invoice & Packing Slips на %s."
+
+#: views/extensions.php:27 views/extensions.php:108
+msgid "Two extra stylish premade templates (Modern & Business)"
+msgstr "Два предварительно созданных стильных шаблона (Modern & Business)"
+
+#: views/extensions.php:24 views/extensions.php:104
+msgid "Advanced, customizable templates"
+msgstr "Продвинутые, настраиваемые шаблоны"
+
+#: views/extensions.php:90
+msgid "WooCommerce Automatic Order Printing"
+msgstr "Автоматическая печать заказов WooCommerce"
+
+#: views/extensions.php:89
+msgid "Check out the WooCommerce Automatic Order Printing extension from our partners at Simba Hosting"
+msgstr "Ознакомьтесь с расширением WooCommerce Automatic Order Printing от наших партнеров на Simba Hosting"
+
+#: views/extensions.php:83
+msgid "Automatically send new orders or packing slips to your printer, as soon as the customer orders!"
+msgstr "Автоматически отправляйте новые заказы или упаковочные листы на ваш принтер, как только клиент размещает заказ!"
+
+#: views/extensions.php:22 views/extensions.php:52
+msgid "Use the plugin in multilingual <b>WPML</b> setups"
+msgstr "Использовать плагин с настройкой на <b>WPML</b> для многоязычности"
+
+#: views/extensions.php:21 views/extensions.php:51
+msgid "<b>Customize</b> the <b>shipping & billing address</b> format to include additional custom fields, font sizes etc. without the need to create a custom template."
+msgstr "<b>Настройте</b> формат <b>адреса доставки и платежа</b> для включения дополнительных полей, размеров шрифта и т.д. без необходимости создавать отдельный шаблон."
+
+#: views/extensions.php:19 views/extensions.php:49
+msgid "Attach <b>up to 3 static files</b> (for example a terms & conditions document) to the WooCommerce emails of your choice."
+msgstr "Присоединить <b>до 3 статических файлов</b> (например документ Термины и условия) на ваш выбор для e-mail сообщений WooCommerce."
+
+#: views/extensions.php:7
+msgid "click items to read more"
+msgstr "щелчок по элементам, чтобы узнать больше"
+
+#: views/extensions.php:6
+msgid "Check out these premium extensions!"
+msgstr "Ознакомьтесь с данными премиум-расширениями!"
+
+#: includes/Settings/SettingsCallbacks.php:37
+msgid "<b>Warning!</b> The settings below are meant for debugging/development only. Do not use them on a live website!"
+msgstr "<b>Внимание!</b> Параметры ниже сделаны лишь для отладки/разработки. Не используйте их в конечной версии проекта!"
+
+#: includes/Settings/SettingsDebug.php:929
+msgid "Send the template output as HTML to the browser instead of creating a PDF."
+msgstr "Отправить вывод шаблона в виде HTML в браузер, вместо создания PDF файла."
+
+#: includes/Settings/SettingsDebug.php:923
+msgid "Output to HTML"
+msgstr "Вывод в HTML формате"
+
+#: includes/Settings/SettingsDebug.php:989
+msgid "Enable debug output"
+msgstr "Включить вывод отладочной информации"
+
+#: includes/Documents/PackingSlip.php:127
+msgid "Display billing address"
+msgstr "Отображать платежный адрес"
+
+#: includes/Documents/Invoice.php:282 includes/Documents/PackingSlip.php:155
+msgid "Display phone number"
+msgstr "Отображать номер телефона"
+
+#: includes/Documents/Invoice.php:271 includes/Documents/PackingSlip.php:144
+msgid "Display email address"
+msgstr "Отображать e-mail адрес"
+
+#: includes/Documents/Invoice.php:254
+msgid "Display shipping address"
+msgstr "Отображать адрес доставки"
+
+#: includes/Settings/SettingsGeneral.php:151
+msgid "Shop header/logo"
+msgstr "Логотип магазина в шапке документов"
+
+#: includes/Settings/SettingsGeneral.php:180 includes/SetupWizard.php:59
+msgid "Shop Name"
+msgstr "Название магазина"
+
+#: includes/Documents/OrderDocument.php:994
+msgid "Payment Method:"
+msgstr "Метод оплаты:"
+
+#: includes/Documents/OrderDocument.php:991
+msgid "Order Date:"
+msgstr "Дата заказа:"
+
+#: includes/Documents/OrderDocument.php:988
+msgid "Order Number:"
+msgstr "Номер заказа:"
+
+#: includes/Documents/OrderDocument.php:982
+msgid "Billing Address:"
+msgstr "Платежный адрес:"
+
+#: includes/Settings/SettingsGeneral.php:434
+msgid "This is footer column 3 in the <i>Modern (Premium)</i> template"
+msgstr "Это третья колонка подвала для <i>Modern (Премиум)</i> шаблонов"
+
+#: includes/Settings/SettingsGeneral.php:419
+msgid "This is footer column 2 in the <i>Modern (Premium)</i> template"
+msgstr "Это вторая колонка подвала для <i>Modern (Премиум)</i> шаблонов"
+
+#: includes/Settings/SettingsGeneral.php:404
+msgid "This is footer column 1 in the <i>Modern (Premium)</i> template"
+msgstr "Это первая колонка подвала для <i>Modern (Премиум)</i> шаблонов"
+
+#: includes/Documents/Invoice.php:24 includes/Documents/Invoice.php:56
+#: includes/Settings/SettingsDebug.php:882 views/settings-page.php:140
+msgid "Invoice"
+msgstr "Счет"
+
+#: includes/Documents/PackingSlip.php:24 includes/Documents/PackingSlip.php:41
+msgid "Packing Slip"
+msgstr "Упаковочный лист"
+
+#: includes/Documents/Invoice.php:360
+msgid "Next invoice number (without prefix/suffix etc.)"
+msgstr "Следующий номер счета (без префикса/суффикса и т.д.)"
+
+#: includes/Admin.php:353 includes/Admin.php:1771 includes/Assets.php:305
+#: includes/Documents/Invoice.php:346 includes/Main.php:1269
+#: views/setup-wizard/display-options.php:83
+msgid "Invoice Number"
+msgstr "Номер счета"
+
+#: views/extensions.php:20 views/extensions.php:50
+msgid "Use <b>separate numbering systems</b> and/or format for proforma invoices and credit notes or utilize the main invoice numbering system"
+msgstr "Использовать <b>отдельную нумерацию</b> и/или формат номеров для предварительных счетов и кредитных напоминаний или использовать основную нумерацию счетов"
+
+#: views/extensions.php:18 views/extensions.php:48
+msgid "Send out a separate <b>notification email</b> with (or without) PDF invoices/packing slips, for example to a drop-shipper or a supplier."
+msgstr "Отправить отдельное <b>email уведомление</b> с (или без) PDF счет/упаковочного листа, к примеру курьеру или поставщику."
+
+#: views/extensions.php:17 views/extensions.php:47
+msgid "Email/print/download <b>PDF Credit Notes & Proforma invoices</b>"
+msgstr "Email/печать/скачать <b>PDF Кредитные напоминание & Предварительные счета</b>"
+
+#: views/extensions.php:43
+msgid "Go Pro: Proforma invoices, credit notes (=refunds) & more!"
+msgstr "Выбери Про: Предварительные счета, кредитные напоминания (=возвраты) и прочее!"
+
+#: includes/Documents/Invoice.php:80
+msgid "Invoice Date:"
+msgstr "Дата счета:"
+
+#: includes/Documents/Invoice.php:68
+#: includes/Documents/OrderDocumentMethods.php:1359
+msgid "Invoice Number:"
+msgstr "Номер счета:"
+
+#. translators: email link
+#: views/extensions.php:122
+msgid "For custom templates, contact us at %s."
+msgstr "Для шаблонов под заказ, свяжитесь с нами по %s."
+
+#: views/extensions.php:26 views/extensions.php:107
+msgid "Completely customize the invoice contents (prices, taxes, thumbnails) to your needs with a drag & drop customizer"
+msgstr "Полностью настраиваемое содержимое счет (цены, налоги, изображения) под ваши нужды с drag & drop настройщиком"
+
+#: views/extensions.php:31
+msgid "This extension conveniently uploads all the invoices (and other pdf documents from the professional extension) that are emailed to your customers to Dropbox. The best way to keep your invoice administration up to date!"
+msgstr "Это расширение удобно загружает на Dropbox все счета (и другие pdf документы из профессиональной версии расширения) отправляемые вашим клиентам. Лучший способ для администрирования актуальных счетов!"
+
+#: languages/strings.php:13
+msgid "SKU"
+msgstr "Артикул"
+
+#: includes/Documents/OrderDocument.php:1003
+msgid "SKU:"
+msgstr "Артикул:"
+
+#. Author URI of the plugin
+#: woocommerce-pdf-invoices-packingslips.php
+msgid "https://www.wpovernight.com"
+msgstr "https://www.wpovernight.com"
+
+#. Description of the plugin
+#: woocommerce-pdf-invoices-packingslips.php
+msgid "Create, print & email PDF or UBL Invoices & PDF Packing Slips for WooCommerce orders."
+msgstr "Создавайте, печатайте и email PDF или UBL счета-фактуры и PDF упаковочные листы для заказов WooCommerce."
+
+#: includes/Main.php:468 includes/Settings.php:232 includes/Settings.php:392
+msgid "You do not have sufficient permissions to access this page."
+msgstr "У вас недостаточно прав для доступа к данной странице."
+
+#: includes/Assets.php:117 includes/Settings.php:115
+#: includes/Settings/SettingsDebug.php:1453
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/Documents/Invoice.php:706 includes/Documents/Invoice.php:752
+#: includes/Documents/PackingSlip.php:230 includes/Settings.php:178
+#: includes/Settings/SettingsDebug.php:721
+msgid "General"
+msgstr "Основные"
+
+#: includes/Settings/SettingsDebug.php:1454 views/advanced-status.php:17
+#: views/advanced-status.php:211
+msgid "Status"
+msgstr "Статус"
+
+#: includes/Settings/SettingsGeneral.php:59
+#: includes/Settings/SettingsUbl.php:138
+msgid "General settings"
+msgstr "Основные настройки"
+
+#: includes/Settings/SettingsGeneral.php:65
+msgid "How do you want to view the PDF?"
+msgstr "Как вы хотите просматривать PDF?"
+
+#: includes/Settings/SettingsGeneral.php:72
+msgid "Download the PDF"
+msgstr "Скачать PDF"
+
+#: includes/Settings/SettingsGeneral.php:73
+msgid "Open the PDF in a new browser tab/window"
+msgstr "Открыть PDF в новом окне/вкладке браузера"
+
+#: includes/Settings/SettingsGeneral.php:80
+msgid "Choose a template"
+msgstr "Выберите шаблон"
+
+#: includes/Settings/SettingsGeneral.php:94
+msgid "Paper size"
+msgstr "Размер бумаги"
+
+#: includes/Settings/SettingsGeneral.php:101
+#: views/setup-wizard/paper-format.php:13
+msgid "A4"
+msgstr "А4"
+
+#: includes/Settings/SettingsGeneral.php:102
+#: views/setup-wizard/paper-format.php:14
+msgid "Letter"
+msgstr "Письмо"
+
+#: includes/Documents/Invoice.php:441
+msgid "Never"
+msgstr "Никогда"
+
+#: includes/Documents/Invoice.php:263 includes/Documents/Invoice.php:440
+#: includes/Documents/PackingSlip.php:136
+#: views/setup-wizard/display-options.php:22
+msgid "Always"
+msgstr "Всегда"
+
+#: includes/Documents/Invoice.php:439
+msgid "Only for specific order statuses (define below)"
+msgstr "Только для указанных статусов заказов (определение ниже)"
+
+#: includes/Documents/Invoice.php:431
+msgid "Allow My Account invoice download"
+msgstr "Позволить скачивать накладную со страницы Личного аккаунта"
+
+#: includes/Main.php:376
+msgid "Some of the export parameters are missing."
+msgstr "Некоторые параметры для экспорта отсутствуют."
+
+#: includes/Settings.php:102 includes/Settings.php:103
+msgid "PDF Invoices"
+msgstr "PDF Счета"
+
+#: includes/Documents/PackingSlip.php:73
+msgid "packing-slip"
+msgid_plural "packing-slips"
+msgstr[0] "упаковочный лист"
+msgstr[1] "упаковочный лист"
+msgstr[2] "упаковочный лист"
+
+#. translators: document type
+#: includes/Documents/Invoice.php:123 includes/Documents/Invoice.php:385
+#: includes/Documents/Invoice.php:394 includes/Documents/Invoice.php:402
+#: includes/Documents/Invoice.php:413
+msgid "invoice"
+msgid_plural "invoices"
+msgstr[0] "счет"
+msgstr[1] "счет"
+msgstr[2] "счет"
+
+#: includes/Documents/Invoice.php:456
+msgid "Enable invoice number column in the orders list"
+msgstr "Показывать номер счета в списке заказов"
+
+#: includes/Documents/Invoice.php:438
+msgid "Only when an invoice is already created/emailed"
+msgstr "Только когда счет уже создан/отправлен по email"
+
+#. translators: directory path
+#: includes/Documents/Invoice.php:233 includes/Documents/Invoice.php:671
+msgid "It looks like the temp folder (<code>%s</code>) is not writable, check the permissions for this folder! Without having write access to this folder, the plugin will not be able to email invoices."
+msgstr "Судя по всему временная папка (<code>%s</code>) без прав на запись, проверьте разрешения для этой папки! Без доступа записи к этой папке, плагин не сможет посылать счета по email."
+
+#: includes/Documents/Invoice.php:490
+msgid "Disable for free orders"
+msgstr "Отключить для бесплатных заказов"

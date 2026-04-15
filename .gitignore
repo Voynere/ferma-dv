@@ -1,0 +1,14 @@
+wp-config.php
+wp-content/uploads/
+wp-content/webp-express/
+wp-content/ewww/
+wp-content/updraft/
+wp-content/cache/
+wp-content/wflogs/
+logs/
+*.log
+*.sql
+*.gz
+*.zip
+.htaccess
+adminer-*.php

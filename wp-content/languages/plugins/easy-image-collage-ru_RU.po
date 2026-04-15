@@ -1,0 +1,426 @@
+# Translation of Plugins - Easy Image Collage - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Easy Image Collage - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-06-24 14:18:05+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Easy Image Collage - Stable (latest release)\n"
+
+#: helpers/vafpress/vafpress_menu_options.php:110
+msgid "Reponsive Layout"
+msgstr "Адаптивная разметка"
+
+#: helpers/vafpress/vafpress_menu_options.php:122
+msgid "Responsive Breakpoint"
+msgstr "Пороговое значение адаптивности"
+
+#: helpers/vafpress/vafpress_menu_options.php:123
+msgid "The width of the collage at which will be switched to the mobile version. Make sure it's not larger than the initial width."
+msgstr "Ширина коллажа, при которой будет переключаться на мобильную версию. Убедитесь, что она не превышает исходную ширину."
+
+#: helpers/vafpress/vafpress_menu_options.php:132
+msgid "Show regular images on mobile"
+msgstr "Показывать обычные изображения на мобильных устройствах."
+
+#: helpers/vafpress/vafpress_menu_options.php:146
+msgid "Hide on mobile"
+msgstr "Скрывать на мобильных"
+
+#: helpers/vafpress/vafpress_menu_options.php:147
+msgid "Prevent captions from blocking the image by hiding them on mobile."
+msgstr "Предотвратите перекрытие изображения подписями, скрывая их на мобильных устройствах."
+
+#: helpers/privacy.php:16
+msgid "Easy Image Collage does not collect any data. When enabling the Pinterest Pin-It button their external code will be embedded. You will be agreeing to their Terms of Use and Privacy Policy."
+msgstr "Easy Image Collage не собирает никаких данных. При щелчке по кнопке Pin-It от Pinterest  будет добавлен их внешний код. Вы соглашаетесь с их условиями использования и политикой конфиденциальности."
+
+#: helpers/vafpress/vafpress_menu_options.php:434
+msgid "Description"
+msgstr "Описание"
+
+#: helpers/vafpress/vafpress_menu_options.php:435
+msgid "You can use the following placeholders:"
+msgstr "Вы можете использовать следующие заполнители:"
+
+#. Author of the plugin
+#: easy-image-collage.php
+msgid "Bootstrapped Ventures"
+msgstr "Bootstrapped Ventures"
+
+#. Description of the plugin
+#: easy-image-collage.php
+msgid "Create beautiful responsive image collages for all your posts and pages"
+msgstr "Создайте красивые адаптивные коллажи для всех записей и страниц"
+
+#. Plugin Name of the plugin
+#: easy-image-collage.php assets/js/blocks/collage/index.js:18
+#: dist/blocks.js:109
+msgid "Easy Image Collage"
+msgstr "Easy Image Collage"
+
+#: helpers/vafpress/vafpress_menu_options.php:482
+msgid "Custom Code"
+msgstr "Пользовательский код"
+
+#: helpers/vafpress/vafpress_menu_options.php:444
+msgid "Custom Links"
+msgstr "Пользовательские ссылки"
+
+#: helpers/vafpress/vafpress_menu_options.php:415
+msgid "Button Size"
+msgstr "Размер кнопки"
+
+#: helpers/vafpress/vafpress_menu_options.php:423
+msgid "Large"
+msgstr "Большая"
+
+#: helpers/vafpress/vafpress_menu_options.php:388
+msgid "Button Style"
+msgstr "Стиль кнопки"
+
+#: helpers/vafpress/vafpress_menu_options.php:361
+msgid "Button Location"
+msgstr "Расположение кнопки"
+
+#: helpers/vafpress/vafpress_menu_options.php:377
+msgid "Bottom Right"
+msgstr "Внизу справа"
+
+#: helpers/vafpress/vafpress_menu_options.php:373
+msgid "Bottom Left"
+msgstr "Внизу слева"
+
+#: helpers/vafpress/vafpress_menu_options.php:369
+msgid "Top Right"
+msgstr "Вверху справа"
+
+#: helpers/vafpress/vafpress_menu_options.php:365
+msgid "Top Left"
+msgstr "Вверху слева"
+
+#: helpers/vafpress/vafpress_menu_options.php:348
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: helpers/vafpress/vafpress_menu_options.php:342
+msgid "Social Media"
+msgstr "Социальные сети"
+
+#: helpers/vafpress/vafpress_menu_options.php:332
+msgid "Background Color"
+msgstr "Цвет фона"
+
+#: helpers/vafpress/vafpress_menu_options.php:325
+msgid "Text Color"
+msgstr "Цвет текста"
+
+#: helpers/vafpress/vafpress_menu_options.php:316
+msgid "Font Size"
+msgstr "Размер шрифта"
+
+#: helpers/vafpress/vafpress_menu_options.php:305
+msgid "Right"
+msgstr "Справа"
+
+#: helpers/vafpress/vafpress_menu_options.php:301
+msgid "Center"
+msgstr "По центру"
+
+#: helpers/vafpress/vafpress_menu_options.php:297
+msgid "Left"
+msgstr "Слева"
+
+#: helpers/vafpress/vafpress_menu_options.php:293
+msgid "Text Alignment"
+msgstr "Выравнивание текста"
+
+#: helpers/vafpress/vafpress_menu_options.php:282
+msgid "Bottom"
+msgstr "Снизу"
+
+#: helpers/vafpress/vafpress_menu_options.php:278
+msgid "Top"
+msgstr "Сверху"
+
+#: helpers/vafpress/vafpress_menu_options.php:274
+msgid "Location"
+msgstr "Расположение"
+
+#: helpers/vafpress/vafpress_menu_options.php:262
+msgid "Appearance"
+msgstr "Внешний вид"
+
+#: helpers/vafpress/vafpress_menu_options.php:234
+msgid "Automatically fill caption when adding an image to the grid."
+msgstr "Автоматически заполнить заголовок при добавлении изображения в сетку."
+
+#: helpers/vafpress/vafpress_menu_options.php:187
+msgid "Advanced"
+msgstr "Дополнительно"
+
+#: helpers/vafpress/vafpress_menu_options.php:489
+msgid "Public CSS"
+msgstr "Публичные CSS"
+
+#: helpers/vafpress/vafpress_menu_options.php:404
+msgid "Round"
+msgstr "Круглая"
+
+#: helpers/vafpress/vafpress_menu_options.php:400
+msgid "White"
+msgstr "Белая"
+
+#: helpers/vafpress/vafpress_menu_options.php:396
+msgid "Red"
+msgstr "Красная"
+
+#: helpers/vafpress/vafpress_menu_options.php:392
+#: helpers/vafpress/vafpress_menu_options.php:419
+msgid "Default"
+msgstr "По умолчанию"
+
+#: helpers/vafpress/vafpress_menu_options.php:355
+msgid "Show a Pinterest button when hovering over images."
+msgstr "Показывать кнопку Pinterest при наведении на изображения."
+
+#: helpers/vafpress/vafpress_menu_options.php:354
+msgid "Pinterest on Hover"
+msgstr "Pinterest при наведении"
+
+#: helpers/vafpress/vafpress_menu_options.php:268
+msgid "Show on Hover Only"
+msgstr "Показывать только при наведении"
+
+#: helpers/vafpress/vafpress_menu_options.php:250
+msgid "Image alt"
+msgstr "Alt изображения"
+
+#: helpers/vafpress/vafpress_menu_options.php:246
+msgid "Image caption"
+msgstr "Подпись к изображению"
+
+#: helpers/vafpress/vafpress_menu_options.php:242
+msgid "Image title"
+msgstr "Название изображения"
+
+#: helpers/vafpress/vafpress_menu_options.php:238
+msgid "Disabled"
+msgstr "Выключено"
+
+#: helpers/vafpress/vafpress_menu_options.php:233
+msgid "Autofill Captions"
+msgstr "Автозаполнение подписей"
+
+#: helpers/vafpress/vafpress_menu_options.php:218
+#: helpers/vafpress/vafpress_menu_options.php:452
+msgid "These features are only available in "
+msgstr "Эти возможности доступны только в "
+
+#: helpers/vafpress/vafpress_menu_options.php:140
+#: helpers/vafpress/vafpress_menu_options.php:210
+msgid "Captions"
+msgstr "Подписи"
+
+#: helpers/vafpress/vafpress_menu_options.php:176
+msgid "Open clickable images in new tab."
+msgstr "Открывать кликабельные изображения в новой вкладке."
+
+#: helpers/vafpress/vafpress_menu_options.php:116
+#: helpers/vafpress/vafpress_menu_options.php:162
+#: helpers/vafpress/vafpress_menu_options.php:227
+msgid "General"
+msgstr "Основное"
+
+#: helpers/vafpress/vafpress_menu_options.php:168
+msgid "Clickable Images"
+msgstr "Кликабельные изображения"
+
+#: helpers/vafpress/vafpress_menu_options.php:156
+msgid "Lightbox"
+msgstr "Lightbox"
+
+#: helpers/vafpress/vafpress_menu_options.php:100
+msgid "Border Color"
+msgstr "Цвет границы"
+
+#: helpers/vafpress/vafpress_menu_options.php:91
+msgid "Border Width"
+msgstr "Ширина границы"
+
+#: helpers/plugin_action_link.php:12
+#: helpers/vafpress/vafpress_menu_options.php:7
+msgid "Settings"
+msgstr "Настройки"
+
+#: helpers/modal.php:85 helpers/modal.php:101 helpers/modal.php:118
+msgid "Cancel"
+msgstr "Отмена"
+
+#: helpers/modal.php:43
+msgid "Finish"
+msgstr "Завершить"
+
+#: helpers/modal.php:42
+msgid "Change layout"
+msgstr "Изменить разметку"
+
+#: helpers/modal.php:31
+msgid "Back"
+msgstr "Назад"
+
+#: helpers/vafpress/vafpress_menu_options.php:193
+msgid "Link class"
+msgstr "Класс ссылки"
+
+#: helpers/vafpress/vafpress_menu_options.php:24
+msgid "Display Method"
+msgstr "Метод отображения"
+
+#: helpers/vafpress/vafpress_menu_options.php:12
+msgid "Default Style"
+msgstr "Стиль по умолчанию"
+
+#: helpers/shortcode_button.php:16
+msgid "Add Image Collage"
+msgstr "Добавить коллаж изображений"
+
+#: helpers/modal.php:67
+msgid "Borders"
+msgstr "Границы"
+
+#: helpers/modal.php:61
+msgid "Text around"
+msgstr "Текст вокруг"
+
+#: helpers/modal.php:59 helpers/modal.php:63
+#: helpers/vafpress/vafpress_menu_options.php:62
+msgid "right"
+msgstr "справа"
+
+#: helpers/modal.php:58 helpers/vafpress/vafpress_menu_options.php:58
+msgid "center"
+msgstr "по центру"
+
+#: helpers/modal.php:57 helpers/modal.php:62
+#: helpers/vafpress/vafpress_menu_options.php:54
+msgid "left"
+msgstr "слева"
+
+#: helpers/modal.php:57 helpers/modal.php:58 helpers/modal.php:59
+#: helpers/vafpress/vafpress_menu_options.php:54
+#: helpers/vafpress/vafpress_menu_options.php:58
+#: helpers/vafpress/vafpress_menu_options.php:62
+msgid "Align"
+msgstr "Расположение"
+
+#: helpers/modal.php:56
+msgid "Text above and below"
+msgstr "Текст сверху и снизу"
+
+#: helpers/modal.php:46
+msgid "Grid"
+msgstr "Сетка"
+
+#: helpers/modal.php:9
+msgid "Premium Only"
+msgstr "Только премиум"
+
+#: helpers/modal.php:8
+msgid "Create Your Own Layout"
+msgstr "Создать свою разметку"
+
+#: helpers/modal.php:3
+msgid "Choose layout"
+msgstr "Выберите разметку"
+
+#: helpers/vafpress/vafpress_menu_options.php:201
+msgid "Rel value of the lightbox link."
+msgstr "Значение rel ссылки Lightbox."
+
+#: helpers/vafpress/vafpress_menu_options.php:200
+msgid "Link rel"
+msgstr "rel ссылки"
+
+#: helpers/vafpress/vafpress_menu_options.php:194
+msgid "Class to be added to the lightbox link."
+msgstr "Класс будет добавлен к ссылке Lightbox."
+
+#: helpers/vafpress/vafpress_menu_options.php:82
+msgid "Grid Ratio"
+msgstr "Пропорция сетки"
+
+#: helpers/vafpress/vafpress_menu_options.php:73
+msgid "Grid Width"
+msgstr "Ширина сетки"
+
+#: helpers/vafpress/vafpress_menu_options.php:50
+msgid "Grid Alignment"
+msgstr "Выравнивание сетки"
+
+#: helpers/vafpress/vafpress_menu_options.php:44
+#: helpers/vafpress/vafpress_menu_options.php:461
+msgid "Defaults"
+msgstr "По умолчанию"
+
+#: helpers/vafpress/vafpress_menu_options.php:32
+msgid "Background Images (Legacy Mode)"
+msgstr "Фоновые изображения (Legacy Mode)"
+
+#: helpers/vafpress/vafpress_menu_options.php:28
+msgid "Actual Images"
+msgstr "Актуальные изображения"
+
+#: helpers/modal.php:62 helpers/modal.php:63
+msgid "Float"
+msgstr "Float"
+
+#: helpers/vafpress/vafpress_menu_options.php:18
+msgid "Display"
+msgstr "Отображение"
+
+#: helpers/modal.php:71
+msgid "Adjust Borders"
+msgstr "Регулировка границ"
+
+#: helpers/modal.php:32 helpers/modal.php:73 helpers/modal.php:86
+#: helpers/modal.php:102 helpers/modal.php:119
+msgid "This feature is only available in"
+msgstr "Эта возможность доступна только в"
+
+#: helpers/vafpress/vafpress_menu_options.php:169
+msgid "Best used in combination with a lightbox plugin."
+msgstr "Лучше всего использовать с плагином Lightbox."
+
+#. Author URI of the plugin
+#: easy-image-collage.php
+msgid "https://bootstrapped.ventures"
+msgstr "https://bootstrapped.ventures"
+
+#: helpers/modal.php:72
+msgid "Show Image Size"
+msgstr "Показать размер изображения"
+
+#: helpers/vafpress/vafpress_menu_options.php:175
+msgid "Open in new tab"
+msgstr "Открыть в новой вкладке"
+
+#: helpers/ajax.php:71
+msgid "remove"
+msgstr "удалить"
+
+#: helpers/assets.php:67 helpers/vafpress/vafpress_menu_options.php:473
+msgid "Use Nofollow"
+msgstr "Использовать nofollow"
+
+#: helpers/ajax.php:89
+msgid "No images in this collage yet"
+msgstr "В этом коллаже пока нет изображений"
+
+#: helpers/assets.php:66 helpers/vafpress/vafpress_menu_options.php:467
+msgid "Open in New Tab"
+msgstr "Открыть в новой вкладке"

@@ -1,0 +1,440 @@
+# Translation of Plugins - Custom Fonts &#8211; Host Your Fonts Locally - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - Custom Fonts &#8211; Host Your Fonts Locally - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-01-15 12:14:08+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n % 10 == 1 && n % 100 != 11) ? 0 : ((n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14)) ? 1 : 2);\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - Custom Fonts &#8211; Host Your Fonts Locally - Stable (latest release)\n"
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-menu.php:88
+#: includes/class-bsf-custom-fonts-taxonomy.php:83
+msgctxt "Menu title"
+msgid "Custom Fonts"
+msgstr "Произвольные шрифты"
+
+#: includes/class-bsf-custom-fonts-admin.php:148
+#: includes/class-bsf-custom-fonts-admin.php:238
+msgid "Font Display"
+msgstr "Font Display"
+
+#: includes/class-bsf-custom-fonts-admin.php:144
+#: includes/class-bsf-custom-fonts-admin.php:234
+msgid "Font Fallback"
+msgstr "Font Fallback"
+
+#: includes/class-bsf-custom-fonts-admin.php:168
+#: includes/class-bsf-custom-fonts-admin.php:269
+msgid "Font weight"
+msgstr "Плотность шрифта"
+
+#: includes/class-bsf-custom-fonts-admin.php:124
+#: includes/class-bsf-custom-fonts-admin.php:305
+#: admin/dashboard/assets/build/dashboard-app.js:1
+#: admin/dashboard/assets/build/dashboard-app.js:2
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/preview/EditGooglePreviewItem.js:19
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/preview/EditGooglePreviewItem.js:24
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/preview/GFontVariation.js:10
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/preview/GFontVariation.js:15
+#: admin/dashboard/assets/src/dashboard-app/pages/welcome/ListItem.js:16
+#: admin/dashboard/assets/src/dashboard-app/pages/welcome/ListItem.js:226
+msgid "Remove"
+msgstr "Удалить"
+
+#. Description of the plugin
+#: custom-fonts.php
+msgid "Upload your own custom font or choose from a vast collection of Google fonts, all hosted directly on your server. Enjoy improved performance, enhanced privacy, and full site editing theme support. Take control of your website's typography without compromising performance, privacy or compliance!"
+msgstr "Загрузите свой собственный шрифт или выберите из обширной коллекции шрифтов Google, размещенных непосредственно на вашем сервере. Наслаждайтесь улучшенной производительностью, улучшенной конфиденциальностью и поддержкой полного редактирования сайта. Возьмите под свой контроль типографику веб-сайта без ущерба для производительности, конфиденциальности или соответствия требованиям!"
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:57
+msgid "Sorry, you are not allowed to do this operation."
+msgstr "Извините, вам не разрешено выполнять эту операцию."
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:58
+msgid "Nonce validation failed"
+msgstr "Сбой проверки nonce"
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:59
+msgid "Sorry, something went wrong."
+msgstr "Извините, что-то пошло не так."
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:60
+msgid "No post data found!"
+msgstr "Не найдены данные записи!"
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:147
+msgid "Successfully created the Font!"
+msgstr "Шрифт успешно создан!"
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:261
+msgid "Successfully updated the Font!"
+msgstr "Шрифт обновлен!"
+
+#: admin/dashboard/includes/class-bsf-custom-fonts-admin-ajax.php:306
+msgid "Successfully deleted the Font!"
+msgstr "Шрифт удалён!"
+
+#. translators: 1: Custom Fonts, 2: Plugin rating link
+#: admin/dashboard/includes/class-bsf-custom-fonts-menu.php:579
+msgid "Enjoyed %1$s? Please leave us a %2$s rating. We really appreciate your support!"
+msgstr "Нравится %1$s? Поставьте нам %2$s. Мы очень ценим вашу поддержку!"
+
+#: classes/class-bsf-custom-fonts-white-label.php:78
+msgid "visit the plugin settings page"
+msgstr "перейдите на страницу настроек плагина;"
+
+#: classes/class-bsf-custom-fonts-white-label.php:78
+msgid "Settings"
+msgstr "Настройки"
+
+#: includes/class-bcf-google-fonts-compatibility.php:686
+msgid "There was some error in deleting the font."
+msgstr "Возникла ошибка при удалении шрифта."
+
+#: includes/class-bcf-google-fonts-compatibility.php:711
+msgid "Successfully deleted font."
+msgstr "Шрифт удалён."
+
+#: includes/class-bsf-custom-fonts-posttype.php:83
+msgctxt "font general name"
+msgid "Custom Fonts"
+msgstr "Пользовательские шрифты"
+
+#: includes/class-bsf-custom-fonts-posttype.php:84
+msgctxt "font singular name"
+msgid "Font"
+msgstr "Шрифт"
+
+#: includes/class-bsf-custom-fonts-posttype.php:85
+msgid "Search Font"
+msgstr "Поиск шрифта"
+
+#: includes/class-bsf-custom-fonts-posttype.php:88
+msgid "View Font"
+msgstr "Просмотр шрифта"
+
+#: includes/class-bsf-custom-fonts-posttype.php:89
+#: includes/class-bsf-custom-fonts-posttype.php:91
+msgid "Add New"
+msgstr "Добавить новый"
+
+#: includes/class-custom-fonts-api-init.php:176
+msgid "Sorry, you cannot list resources."
+msgstr "Вы не можете просматривать список ресурсов."
+
+#: includes/class-bsf-custom-fonts-admin.php:132
+#: includes/class-bsf-custom-fonts-admin.php:217
+#: admin/dashboard/assets/build/dashboard-app.js:1
+#: admin/dashboard/assets/build/dashboard-app.js:2
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/EditLocalFont.js:436
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/LocalFont.js:453
+msgid "Add Font Variation"
+msgstr "Добавить новый вариант"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:40
+msgid "100 Thin"
+msgstr "100 тонкий"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:41
+msgid "200 Extra Light"
+msgstr "200 очень легкий"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:42
+msgid "300 Light"
+msgstr "300 легкий"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:43
+msgid "400 Regular"
+msgstr "400 нормальный"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:44
+msgid "500 Medium"
+msgstr "500 средний"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:45
+msgid "600 Semi-Bold"
+msgstr "600 полужирный"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:46
+msgid "700 Bold"
+msgstr "700 жирный"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:47
+msgid "800 Extra-Bold"
+msgstr "800 очень жирный"
+
+#: admin/dashboard/includes/class-bcf-custom-font-families.php:48
+msgid "900 Ultra-Bold"
+msgstr "900 сверхжирный"
+
+#: includes/class-bsf-custom-fonts-admin.php:177
+#: includes/class-bsf-custom-fonts-admin.php:278
+msgid "Bold 700"
+msgstr "Bold 700"
+
+#: includes/class-bsf-custom-fonts-admin.php:178
+#: includes/class-bsf-custom-fonts-admin.php:279
+msgid "Extra-Bold 800"
+msgstr "Extra-Bold 800"
+
+#: includes/class-bsf-custom-fonts-admin.php:172
+#: includes/class-bsf-custom-fonts-admin.php:273
+msgid "Extra-Light 200"
+msgstr "Extra-Light 200"
+
+#: includes/class-bsf-custom-fonts-admin.php:173
+#: includes/class-bsf-custom-fonts-admin.php:274
+msgid "Light 300"
+msgstr "Light 300"
+
+#: includes/class-bsf-custom-fonts-admin.php:175
+#: includes/class-bsf-custom-fonts-admin.php:276
+msgid "Medium 500"
+msgstr "Medium 500"
+
+#: includes/class-bsf-custom-fonts-admin.php:174
+#: includes/class-bsf-custom-fonts-admin.php:275
+msgid "Normal 400"
+msgstr "Normal 400"
+
+#: includes/class-bsf-custom-fonts-admin.php:176
+#: includes/class-bsf-custom-fonts-admin.php:277
+msgid "Semi-Bold 600"
+msgstr "Semi-Bold 600"
+
+#: includes/class-bsf-custom-fonts-admin.php:179
+#: includes/class-bsf-custom-fonts-admin.php:280
+msgid "Ultra-Bold 900"
+msgstr "Ultra-Bold 900"
+
+#: includes/class-bsf-custom-fonts-admin.php:169
+#: includes/class-bsf-custom-fonts-admin.php:270
+msgid "Select font-weight property for this font"
+msgstr "Выберите свойство font-weight для этого шрифта"
+
+#: includes/class-bsf-custom-fonts-admin.php:171
+#: includes/class-bsf-custom-fonts-admin.php:272
+msgid "Thin 100"
+msgstr "Thin 100"
+
+#: includes/class-bsf-custom-fonts-admin.php:144
+#: includes/class-bsf-custom-fonts-admin.php:234
+msgid "Add the font's fallback names with comma(,) separator.  eg. Arial, Serif"
+msgstr "Добавьте резервные имена шрифта через запятую (,). напр., Arial, Serif"
+
+#: includes/class-bsf-custom-fonts-taxonomy.php:95
+msgid "← Go to Fonts"
+msgstr "← Перейти к шрифтам"
+
+#. translators: %s Product title
+#: admin/bsf-analytics/class-bsf-analytics.php:408
+msgid "Allow %s products to track non-sensitive usage tracking data."
+msgstr "Разрешить продуктам %s отслеживать некритичные данные об их использовании."
+
+#. translators: %s usage doc link
+#: admin/bsf-analytics/class-bsf-analytics.php:243
+msgid " Know More."
+msgstr "Узнать больше. "
+
+#: admin/bsf-analytics/class-bsf-analytics.php:251
+msgid "Yes! Allow it"
+msgstr "Да! Разрешить "
+
+#: admin/bsf-analytics/class-bsf-analytics.php:260
+msgid "No Thanks"
+msgstr "Нет, спасибо"
+
+#: admin/bsf-analytics/class-bsf-analytics.php:416
+msgid "Learn More."
+msgstr "Узнать больше."
+
+#: admin/bsf-analytics/class-bsf-analytics.php:219
+msgid "This will be applicable for all sites from the network."
+msgstr "Это будет применимо ко всем сайтам сети."
+
+#: admin/bsf-analytics/class-bsf-analytics.php:411
+msgid " This will be applicable for all sites from the network."
+msgstr " Это будет применимо ко всем сайтам сети."
+
+#: lib/notices/class-astra-notices.php:119
+msgid "WordPress Nonce not validated."
+msgstr "WordPress Nonce не подтвержден."
+
+#. translators: %s product name
+#: admin/bsf-analytics/class-bsf-analytics.php:216
+msgid "Want to help make <strong>%1s</strong> even more awesome? Allow us to collect non-sensitive diagnostic data and usage information. "
+msgstr "Хотите помочь сделать <strong>%1s</strong> еще более потрясающим? Разрешите нам собирать нечувствительные диагностические данные и информацию об использовании. "
+
+#: admin/bsf-analytics/class-bsf-analytics.php:364
+msgid "Usage Tracking"
+msgstr "Отслеживание использования"
+
+#: includes/class-bsf-custom-fonts-admin.php:149
+#: includes/class-bsf-custom-fonts-admin.php:239
+msgid "Select font-display property for this font"
+msgstr "Выберите свойство font-display для этого шрифта"
+
+#: includes/class-bsf-custom-fonts-admin.php:187
+#: includes/class-bsf-custom-fonts-admin.php:297
+msgid "Font .otf"
+msgstr "Шрифт формата .otf"
+
+#: includes/class-bsf-custom-fonts-admin.php:187
+#: includes/class-bsf-custom-fonts-admin.php:297
+msgid "Upload the font's otf file or enter the URL."
+msgstr "Загрузите файл шрифта формата otf или введите URL."
+
+#: classes/class-bsf-custom-fonts-render.php:176
+msgid "Custom"
+msgstr "Пользовательский"
+
+#: includes/white-label.php:29
+msgid "Plugin Name:"
+msgstr "Название плагина:"
+
+#: includes/white-label.php:34
+msgid "Plugin Description:"
+msgstr "Описание плагина:"
+
+#: includes/white-label.php:18 includes/white-label.php:23
+msgid "Custom Fonts Branding"
+msgstr "Брендинг пользовательских шрифтов"
+
+#: includes/class-bsf-custom-fonts-taxonomy.php:92
+#: admin/dashboard/assets/build/dashboard-app.js:2
+#: admin/dashboard/assets/src/dashboard-app/pages/welcome/Welcome.js:76
+#: admin/dashboard/assets/src/dashboard-app/pages/welcome/Welcome.js:109
+msgid "Add New Font"
+msgstr "Добавить новый шрифт"
+
+#: includes/class-bsf-custom-fonts-posttype.php:86
+#: includes/class-bsf-custom-fonts-taxonomy.php:87
+msgid "All Fonts"
+msgstr "Все шрифты"
+
+#. Plugin URI of the plugin
+#: custom-fonts.php
+msgid "http://www.wpastra.com/"
+msgstr "http://www.wpastra.com/"
+
+#: includes/class-bsf-custom-fonts-posttype.php:92
+#: includes/class-bsf-custom-fonts-taxonomy.php:93
+msgid "New Font Name"
+msgstr "Название нового шрифта"
+
+#: includes/class-bsf-custom-fonts-taxonomy.php:86
+msgid "Search Fonts"
+msgstr "Поиск шрифтов"
+
+#: includes/class-bsf-custom-fonts-admin.php:351
+#: includes/class-bsf-custom-fonts-admin.php:511
+msgid "Upload"
+msgstr "Загрузить"
+
+#: includes/class-bsf-custom-fonts-posttype.php:90
+#: includes/class-bsf-custom-fonts-taxonomy.php:91
+msgid "Update Font"
+msgstr "Обновить шрифт"
+
+#. Author URI of the plugin
+#: custom-fonts.php
+msgid "http://www.brainstormforce.com"
+msgstr "http://www.brainstormforce.com"
+
+#: includes/class-bsf-custom-fonts-admin.php:182
+#: includes/class-bsf-custom-fonts-admin.php:287
+msgid "Font .woff2"
+msgstr "Шрифт формата .woff2"
+
+#: includes/class-bsf-custom-fonts-admin.php:184
+#: includes/class-bsf-custom-fonts-admin.php:291
+msgid "Font .ttf"
+msgstr "Шрифт формата .ttf"
+
+#: includes/class-bsf-custom-fonts-admin.php:186
+#: includes/class-bsf-custom-fonts-admin.php:295
+msgid "Font .svg"
+msgstr "Шрифт формата .svg"
+
+#: includes/class-bsf-custom-fonts-admin.php:183
+#: includes/class-bsf-custom-fonts-admin.php:289
+msgid "Font .woff"
+msgstr "Шрифт формата .woff"
+
+#: includes/class-bsf-custom-fonts-admin.php:185
+#: includes/class-bsf-custom-fonts-admin.php:293
+msgid "Font .eot"
+msgstr "Шрифт формата .eot"
+
+#: includes/class-bsf-custom-fonts-taxonomy.php:84
+msgid "Font"
+msgstr "Шрифт"
+
+#: includes/class-bsf-custom-fonts-posttype.php:87
+#: includes/class-bsf-custom-fonts-taxonomy.php:90
+#: admin/dashboard/assets/build/dashboard-app.js:1
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/EditGoogleFont.js:95
+#: admin/dashboard/assets/src/dashboard-app/pages/fonts/edit/EditLocalFont.js:339
+msgid "Edit Font"
+msgstr "Изменить шрифт"
+
+#: includes/class-bsf-custom-fonts-taxonomy.php:85
+msgctxt "Admin menu name"
+msgid "Custom Fonts"
+msgstr "Пользовательские шрифты"
+
+#. Author of the plugin
+#: custom-fonts.php
+msgid "Brainstorm Force"
+msgstr "Brainstorm Force"
+
+#: includes/class-bsf-custom-fonts-taxonomy.php:94
+msgid "No fonts found"
+msgstr "Шрифтов не найдено"
+
+#: includes/class-bsf-custom-fonts-taxonomy.php:89
+msgid "Parent Font:"
+msgstr "Родительский шрифт:"
+
+#: includes/class-bsf-custom-fonts-taxonomy.php:88
+msgid "Parent Font"
+msgstr "Родительский шрифт"
+
+#: includes/class-bsf-custom-fonts-admin.php:182
+#: includes/class-bsf-custom-fonts-admin.php:287
+msgid "Upload the font's woff2 file or enter the URL."
+msgstr "Загрузите файл шрифта формата woff2 или введите URL."
+
+#: includes/class-bsf-custom-fonts-admin.php:183
+#: includes/class-bsf-custom-fonts-admin.php:289
+msgid "Upload the font's woff file or enter the URL."
+msgstr "Загрузите файл шрифта формата woff или введите URL."
+
+#: includes/class-bsf-custom-fonts-admin.php:184
+#: includes/class-bsf-custom-fonts-admin.php:291
+msgid "Upload the font's ttf file or enter the URL."
+msgstr "Загрузите файл шрифта формата ttf или введите URL."
+
+#: includes/class-bsf-custom-fonts-admin.php:186
+#: includes/class-bsf-custom-fonts-admin.php:295
+msgid "Upload the font's svg file or enter the URL."
+msgstr "Загрузите файл шрифта формата svg или введите URL."
+
+#: includes/class-bsf-custom-fonts-admin.php:185
+#: includes/class-bsf-custom-fonts-admin.php:293
+msgid "Upload the font's eot file or enter the URL."
+msgstr "Загрузите файл шрифта формата eot или введите URL."
+
+#. Plugin Name of the plugin
+#: custom-fonts.php
+msgid "Custom Fonts"
+msgstr "Custom Fonts"
+
+#. translators: 1: Astra theme from wordpress.org
+#: classes/class-bsf-custom-fonts-render.php:444
+msgid "Custom Fonts Plugin requires minimum 1.0.16 version of the Astra Theme."
+msgstr "Для работы плагина Custom Fonts у вас должна быть установлена версия темы Astra 1.0.16 и выше."

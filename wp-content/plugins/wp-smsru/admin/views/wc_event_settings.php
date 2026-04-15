@@ -1,0 +1,438 @@
+<?php
+//Load Data
+$api_id = '';
+if (isset($this->smsru_settings['api_id']) && !empty($this->smsru_settings['api_id'])) {
+    $api_id = $this->smsru_settings['api_id'];
+}
+
+$phone = '';
+if (isset($this->settings['phone']) && !empty($this->settings['phone'])) {
+    $phone = $this->settings['phone'];
+}
+
+$name = '';
+if (isset($this->settings['name']) && !empty($this->settings['name'])) {
+    $name = $this->settings['name'];
+}
+
+$time = 0;
+if (isset($this->settings['time']) && !empty($this->settings['time'])) {
+    $time = $this->settings['time'];
+}
+
+$lat = 0;
+if (isset($this->settings['lat'])) {
+    $lat = $this->settings['lat'];
+}
+
+$wc_event = [];
+$wc_event['admin'] = [];
+if (isset($this->settings['wc_event_admin'])) {
+    $wc_event['admin'] = $this->settings['wc_event_admin'];
+}
+
+$wc_event['client'] = [];
+if (isset($this->settings['wc_event_client'])) {
+    $wc_event['client'] = $this->settings['wc_event_client'];
+}
+
+$custom_wc_event = [];
+if (isset($this->settings['custom_wc_event'])) {
+    $custom_wc_event = $this->settings['custom_wc_event'];
+}
+
+$custom_wc_status_event = [];
+if (isset($this->settings['custom_wc_status_event'])) {
+    $custom_wc_status_event = $this->settings['custom_wc_status_event'];
+}
+
+$statuses = wc_get_order_statuses();
+
+?>
+
+<form id="smsru-wc-event-settings-form" class="" action="" method="post" data-smsru-validate="true">
+    <?php wp_nonce_field('verify_smsru_settings_nonce', 'smsru_settings_nonce'); ?>
+    <h2>Настройки СМС оповещений о событиях для WooCommerce</h2>
+    <table class="form-table">
+        <tr>
+            <th><label for="api_id">Телефон для оповещения о событиях WooCommerce</label></th>
+            <td>
+                <input type="text" id="phone" name="phone" class="regular-text"
+                       value="<?php echo esc_attr($phone); ?>"/>
+                <p class="description">
+                    Телефоны можно указывать через запятую без пробелов.
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="name">Имя отправителя</label></th>
+            <td>
+                <?php if ($api_id == '') : ?>
+                    Сначала укажите api_id и сохрание настройки.
+                <?php else : ?>
+                    <?php if ($this->senders->status == "OK") : ?>
+                        <select id="name" name="name">
+                            <option value="">---</option>
+                            <?php foreach ($this->senders->senders as $key => $sender) : ?>
+                                <option value="<?php echo $sender ?>" <?php echo($sender == $name ? 'selected' : '') ?>><?php echo $sender ?></option>';
+                            <?php endforeach; ?>
+                        </select>
+                        <p class="description">При пустом значении, в имя отправителя подставляется Ваш номер.</p>
+                    <?php else : ?>
+                        Несуществующий api_id.
+                    <?php endif; ?>
+                <?php endif; ?>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="time">Задержка перед отправкой сообщения</label></th>
+            <td>
+                <input type="number" id="time" name="time" class="regular-text" value="<?php echo esc_attr($time); ?>"/>
+                <p class="description">
+                    Откладывает отправку сообщения на указанное время.<br/>
+                    Время, на которое нужно отложить отправку указывается в секундах!!! Пример 252000 = 7 часов
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <th><label for="lat">Перевод всех русских символов в латинские</label></th>
+            <td>
+                <input type="checkbox" id="lat" name="lat" value="1" <?php echo($lat == 1 ? 'checked' : '') ?> />
+            </td>
+        </tr>
+    </table>
+
+    <hr>
+
+    <p>Для каждого вида оповещения можно задать свой шаблон сообщения. Варианты макросов:</p>
+    <ul>
+        <li>{NUM} - номер заказа</li>
+        <li>{SUM} - сумма заказа</li>
+        <li>{EMAIL} - E-mail клиента</li>
+        <li>{PHONE} - Телефон клиента</li>
+        <li>{FIRSTNAME} - Имя клиента</li>
+        <li>{LASTNAME} - Фамилия клиента</li>
+        <li>{CITY} - Город клиента</li>
+        <li>{ADDRESS} - Адрес клиента</li>
+        <li>{BLOGNAME} - Название магазина</li>
+        <li>{OLD_STATUS} - Старый статус</li>
+        <li>{NEW_STATUS} - Новый статус</li>
+    </ul>
+
+    <hr>
+
+    <?php foreach ($this->action_fields['sections'] as $key => $fields) : ?>
+        <?php if ($key == 'admin') : ?>
+            <h2>Варианты уведомлений администратору</h2>
+        <?php else : ?>
+            <h2 style="margin-top: 30px">Варианты уведомлений клиенту</h2>
+        <?php endif; ?>
+        <?php foreach ($fields as $field_key => $field_value_arr) : ?>
+            <div class="welcome-panel" style="padding: 15px">
+                <h3 style="margin: 0;"><?= $field_value_arr['title'] ?></h3>
+                <input type="hidden" name="wc_event_<?= $key ?>[<?= $field_key ?>][action]"
+                       value="<?= $field_value_arr['action'] ?>">
+                <table class="form-table">
+                    <?php foreach ($this->action_fields['fields'] as $index => $field) : ?>
+                        <?php
+                        if($key == 'client' && $field['name'] == 'phone') {
+                            continue;
+                        }
+                        ?>
+                        <tr>
+                            <?php
+                            $field_id = 'wc_' . $field_value_arr['action'] . '_' . $field['name'] . '_' . wp_rand(99, 99999);
+                            ?>
+                            <th><label for="<?= $field_id ?>"><?= $field['title'] ?></label></th>
+                            <td>
+                                <?php
+                                $field_name = 'wc_event_' . $key . '[' . $field_key . '][' . $field['name'] . ']';
+
+                                $field_attr = [];
+                                if (isset($field['attr'])) {
+                                    foreach ($field['attr'] as $attr => $value) {
+                                        $field_attr[] = $attr . '="' . $value . '"';
+                                    }
+                                }
+                                $field_attr = implode(' ', $field_attr);
+
+                                $field_value = isset($wc_event[$key][$field_key][$field['name']]) ? $wc_event[$key][$field_key][$field['name']] : '';
+
+                                switch ($field['type']) {
+                                    case 'checkbox':
+                                        echo '<input type="checkbox" id="' . $field_id . '" name="' . $field_name . '" ' . $field_attr . ' value="1" ' . (isset($wc_event[$key][$field_key][$field['name']]) ? 'checked' : '') . ' />';
+                                        break;
+
+                                    case 'text':
+                                        echo '<input type="text" id="' . $field_id . '" name="' . $field_name . '" ' . $field_attr . ' value="' . $field_value . '" />';
+                                        break;
+
+                                    case 'number':
+                                        echo '<input type="number" id="' . $field_id . '" name="' . $field_name . '" ' . $field_attr . ' value="' . $field_value . '" />';
+                                        break;
+
+                                    case 'textarea':
+                                        echo '<textarea id="' . $field_id . '" name="' . $field_name . '" ' . $field_attr . '>' . $field_value . '</textarea>';
+                                        break;
+                                }
+                                ?>
+                                <?php if (isset($field['description']) && !empty($field['description'])) : ?>
+                                    <p class="description"><?= $field['description'] ?></p>
+                                <?php endif; ?>
+                            </td>
+                        </tr>
+                    <?php endforeach; ?>
+                </table>
+            </div>
+        <?php endforeach; ?>
+    <?php endforeach; ?>
+
+    <hr>
+
+    <h2 style="margin-top: 30px">Пользовательские события для конкретного статуса заказа </h2>
+
+    <div id="custom_status_event">
+        <?php foreach ($custom_wc_status_event as $key => $field) : ?>
+            <div class="welcome-panel" style="padding: 15px" data-num="<?= $key ?>">
+                <table class="form-table">
+                    <tbody>
+                    <tr>
+                        <th><label for="custom_wc_event_active_<?= $key ?>">Активировать оповещение</label></th>
+                        <td>
+                            <input type="checkbox" id="custom_wc_event_active_<?= $key ?>"
+                                   name="custom_wc_status_event[<?= $key ?>][active]"
+                                   value="1" <?= (isset($field['active']) ? 'checked' : '') ?>>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="custom_wc_status_event_status_<?= $key ?>">Статус заказа</label></th>
+                        <td>
+                            <select name="custom_wc_status_event[<?= $key ?>][status]"
+                                    id="custom_wc_status_event_status_<?= $key ?>" class="regular-text">
+                                <?php foreach ($statuses as $status => $value) : ?>
+                                    <option value="<?= $status ?>" <?= ($field['status'] == $status ? 'selected' : '') ?>><?= $value ?></option>
+                                <?php endforeach; ?>
+                            </select>
+                            <p class="description">Выберите статус заказа для которого нужно создать оповещение.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="custom_wc_event_phone_<?= $key ?>">Телефон для оповещения</label></th>
+                        <td>
+                            <input type="text" id="custom_wc_event_phone_<?= $key ?>"
+                                   name="custom_wc_status_event[<?= $key ?>][phone]" class="regular-text"
+                                   value="<?= $field['phone'] ?>">
+                            <p class="description">
+                                Доступен макрос {PHONE} - номер телефона клиента, берется из заказа.
+                                Если указан, то телефон из общей настройки игнорируется.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="custom_wc_event_time_<?= $key ?>">Задержка перед отправкой сообщения</label>
+                        </th>
+                        <td>
+                            <input type="number" id="custom_wc_event_time_<?= $key ?>"
+                                   name="custom_wc_status_event[<?= $key ?>][time]" min="0" step="1"
+                                   class="regular-text" value="<?= $field['time'] ?>">
+                            <p class="description">Если указана, то задержка из общей настройки игнорируется.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="custom_wc_event_message_<?= $key ?>">Шаблон сообщения</label></th>
+                        <td>
+                            <textarea id="custom_wc_event_message_<?= $key ?>"
+                                      name="custom_wc_status_event[<?= $key ?>][message]" rows="3"
+                                      class="large-text code"><?= $field['message'] ?></textarea>
+                            <p class="description">Досупны все макросы кроме {OLD_STATUS}.</p>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button class="button button-secondary remove_custom_site_event" type="button" style="float:right">
+                    Yдалить
+                </button>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+    <button class="button button-secondary" id="add_custom_status_event" type="button">Добавить</button>
+
+    <hr>
+
+    <h2 style="margin-top: 30px">Пользовательские события для оповещений</h2>
+
+    <div id="custom_site_event">
+        <?php foreach ($custom_wc_event as $key => $field) : ?>
+            <div class="welcome-panel" style="padding: 15px" data-num="<?= $key ?>">
+                <table class="form-table">
+                    <tbody>
+                    <tr>
+                        <th><label for="custom_wc_event_active_<?= $key ?>">Активировать оповещение</label></th>
+                        <td>
+                            <input type="checkbox" id="custom_wc_event_active_<?= $key ?>"
+                                   name="custom_wc_event[<?= $key ?>][active]"
+                                   value="1" <?= (isset($field['active']) ? 'checked' : '') ?>>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="custom_wc_event_action_<?= $key ?>">Фильтер или Событие(filter, action)</label>
+                        </th>
+                        <td>
+                            <input type="text" id="custom_wc_event_action_<?= $key ?>" class="regular-text"
+                                   name="custom_wc_event[<?= $key ?>][action]" value="<?= $field['action'] ?>">
+                            <p class="description">Укажите фильтер или событие при отработке которого будет отправляться
+                                сообщение.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="custom_wc_event_phone_<?= $key ?>">Телефон для оповещения</label></th>
+                        <td>
+                            <input type="text" id="custom_wc_event_phone_<?= $key ?>"
+                                   name="custom_wc_event[<?= $key ?>][phone]" class="regular-text"
+                                   value="<?= $field['phone'] ?>">
+                            <p class="description">Если указан, то телефон из общей настройки игнорируется.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="custom_wc_event_time_<?= $key ?>">Задержка перед отправкой сообщения</label>
+                        </th>
+                        <td>
+                            <input type="number" id="custom_wc_event_time_<?= $key ?>"
+                                   name="custom_wc_event[<?= $key ?>][time]" min="0" step="1" class="regular-text"
+                                   value="<?= $field['time'] ?>">
+                            <p class="description">Если указана, то задержка из общей настройки игнорируется.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th><label for="custom_wc_event_message_<?= $key ?>">Шаблон сообщения</label></th>
+                        <td>
+                            <textarea id="custom_wc_event_message_<?= $key ?>"
+                                      name="custom_wc_event[<?= $key ?>][message]" rows="3"
+                                      class="large-text code"><?= $field['message'] ?></textarea>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                <button class="button button-secondary remove_custom_site_event" type="button" style="float:right">
+                    Yдалить
+                </button>
+            </div>
+        <?php endforeach; ?>
+    </div>
+
+    <button class="button button-secondary" id="add_custom_site_event" type="button">Добавить</button>
+
+    <p class="submit">
+        <input type="submit" class="button button-primary" value="Сохранить"/>
+    </p>
+</form>
+<div id="custom_site_event_template" style="display:none;">
+    <div class="welcome-panel" style="padding: 15px" data-num="%%num%%">
+        <table class="form-table">
+            <tbody>
+            <tr>
+                <th><label for="custom_wc_event_active_%%num%%">Активировать оповещение</label></th>
+                <td>
+                    <input type="checkbox" id="custom_wc_event_active_%%num%%"
+                           %%name%%="custom_wc_event[%%num%%][active]" value="1">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="custom_wc_event_action_%%num%%">Фильтер или Событие(filter, action)</label></th>
+                <td>
+                    <input type="text" id="custom_wc_event_action_%%num%%" class="regular-text"
+                           %%name%%="custom_wc_event[%%num%%][action]" value="">
+                    <p class="description">Укажите фильтер или событие при отработке которого будет отправляться
+                        сообщение.</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="custom_wc_event_phone_%%num%%">Телефон для оповещения</label></th>
+                <td>
+                    <input type="text" id="custom_wc_event_phone_%%num%%" %%name%%="custom_wc_event[%%num%%][phone]"
+                           class="regular-text" value="">
+                    <p class="description">Если указан, то телефон из общей настройки игнорируется.</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="custom_wc_event_time_%%num%%">Задержка перед отправкой сообщения</label></th>
+                <td>
+                    <input type="number" id="custom_wc_event_time_%%num%%" %%name%%="custom_wc_event[%%num%%][time]"
+                           min="0" step="1" class="regular-text" value="">
+                    <p class="description">Если указана, то задержка из общей настройки игнорируется.</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="custom_wc_event_message_%%num%%">Шаблон сообщения</label></th>
+                <td>
+                    <textarea id="custom_wc_event_message_%%num%%" %%name%%="custom_wc_event[%%num%%][message]" rows="3"
+                              class="large-text code"></textarea>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button class="button button-secondary remove_custom_site_event" type="button" style="float:right">Yдалить
+        </button>
+    </div>
+</div>
+
+
+<div id="custom_status_event_template" style="display:none;">
+    <div class="welcome-panel" style="padding: 15px" data-num="%%num%%">
+        <table class="form-table">
+            <tbody>
+            <tr>
+                <th><label for="custom_wc_status_event_active_%%num%%">Активировать оповещение</label></th>
+                <td>
+                    <input type="checkbox" id="custom_wc_status_event_active_%%num%%"
+                           %%name%%="custom_wc_status_event[%%num%%][active]" value="1">
+                </td>
+            </tr>
+            <tr>
+                <th><label for="custom_wc_status_event_status_%%num%%">Статус заказа</label></th>
+                <td>
+                    <select %%name%%="custom_wc_status_event[%%num%%][status]"
+                            id="custom_wc_status_event_status_%%num%%" class="regular-text">
+                        <?php foreach ($statuses as $status => $value) : ?>
+                            <option value="<?= $status ?>"><?= $value ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                    <p class="description">Выберите статус заказа для которого нужно создать оповещение.</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="custom_wc_status_event_phone_%%num%%">Телефон для оповещения</label></th>
+                <td>
+                    <input type="text" id="custom_wc_status_event_phone_%%num%%"
+                           %%name%%="custom_wc_status_event[%%num%%][phone]" class="regular-text" value="">
+                    <p class="description">
+                        Доступен макрос {PHONE} - номер телефона клиента, берется из заказа.
+                        Если указан, то телефон из общей настройки игнорируется.
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="custom_wc_status_event_time_%%num%%">Задержка перед отправкой сообщения</label></th>
+                <td>
+                    <input type="number" id="custom_wc_status_event_time_%%num%%"
+                           %%name%%="custom_wc_status_event[%%num%%][time]" min="0" step="1" class="regular-text"
+                           value="">
+                    <p class="description">Если указана, то задержка из общей настройки игнорируется.</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="custom_wc_status_event_message_%%num%%">Шаблон сообщения</label></th>
+                <td>
+                    <textarea id="custom_wc_status_event_message_%%num%%"
+                              %%name%%="custom_wc_status_event[%%num%%][message]" rows="3"
+                              class="large-text code"></textarea>
+                    <p class="description">Досупны все макросы.</p>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+        <button class="button button-secondary remove_custom_site_event" type="button" style="float:right">Yдалить
+        </button>
+    </div>
+</div>

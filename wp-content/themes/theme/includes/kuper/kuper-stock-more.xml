@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<stock_data stock_date="2026-04-16">
+  <offer>
+    <id>3449</id>
+    <shop_stocks>0.1</shop_stocks>
+  </offer>
+  <offer>
+    <id>3445</id>
+    <shop_stocks>2.738</shop_stocks>
+  </offer>
+  <offer>
+    <id>3427</id>
+    <shop_stocks>0.152</shop_stocks>
+  </offer>
+</stock_data>
