@@ -177,7 +177,7 @@ $uss_shops = [
 	  foreach ($address as $key => $value) {
 		update_user_meta($user_id, $key, $value);
 	  }
-		if ($address['billing_samoviziv'] == 'Эгершельд, Верхнепортовая,68а') {
+		if (in_array($address['billing_samoviziv'], ['Эгершельд, Верхнепортовая,41в', 'Эгершельд, Верхнепортовая,68а'], true)) {
 			update_user_meta($user_id, 'samovivoz', 'Эгершельд');
 			$points[] = '7c0dc9ce-ce1e-11ea-0a80-09ca000e5e93';
 		}
@@ -230,7 +230,7 @@ $uss_shops = [
 		setcookie( 'billing_samoviziv', $address['billing_samoviziv'], time() + 3600*24*7, '/' );
 		setcookie( 'time_to_dev', $address['time_type'], time() + 3600*24*7, '/' );
 	}
-	if ($address['billing_samoviziv'] == 'Эгершельд, Верхнепортовая,68а') {
+	if (in_array($address['billing_samoviziv'], ['Эгершельд, Верхнепортовая,41в', 'Эгершельд, Верхнепортовая,68а'], true)) {
 		setcookie("market", 'Эгершельд', time()+60*60*24*7, '/');
 		setcookie("key_market", '7c0dc9ce-ce1e-11ea-0a80-09ca000e5e93', time()+60*60*24*7, '/');
 		$points[] = '7c0dc9ce-ce1e-11ea-0a80-09ca000e5e93';

@@ -449,6 +449,7 @@ function fdv_ms_store($customerOrder, WC_Order $Order) {
         $delivery = $Order->get_meta('billing_sss');
 
         $dataMapping = [
+            'Эгершельд, Верхнепортовая,41в' => '7c0dc9ce-ce1e-11ea-0a80-09ca000e5e93',
             'Эгершельд, Верхнепортовая,68а' => '7c0dc9ce-ce1e-11ea-0a80-09ca000e5e93',
             'Реми-Сити (ул. Народный пр-т, 20)' => 'b24e4c35-9609-11eb-0a80-0d0d008550c2',
             'ТЦ «Море», Гипермаркет (ул. Некрасовская, 49а)' => 'cab1caa9-da10-11eb-0a80-07410026c356',

@@ -1010,9 +1010,8 @@ endif; ?>
         <h5 style="font-weight:bold;">Владивосток:</h5>
         <?php
         $stores = [
-            ['name' => 'Эгершельд, Верхнепортовая,68а', 'data' => '11'],
+            ['name' => 'Эгершельд, Верхнепортовая,41в', 'data' => '11'],
             ['name' => 'Реми-Сити (ул. Народный пр-т, 20)', 'data' => '1'],
-            ['name' => 'Заря (ул. Чкалова, 30)', 'data' => '6'],
             ['name' => 'ТЦ «Море», Гипермаркет (ул. Некрасовская, 49а)', 'data' => '2'],
             ['name' => 'ул. Тимирязева,31 строение 1 (район Спутник)', 'data' => '3'],
         ];
@@ -1223,11 +1222,10 @@ endif; ?>
             var map2 = new ymaps.Map('map2', { center: [43.1798, 131.8869], zoom: 10, controls: ['zoomControl'] });
 
             var placemarks = {
-                '11': new ymaps.Placemark([43.09968, 131.863907], { hintContent: 'Эгершельд, Верхнепортовая,68а' }),
+                '11': new ymaps.Placemark([43.09968, 131.863907], { hintContent: 'Эгершельд, Верхнепортовая,41в' }),
                 '1': new ymaps.Placemark([43.128381, 131.919746], { hintContent: 'Реми-Сити (ул. Народный пр-т, 20)' }),
                 '2': new ymaps.Placemark([43.127427, 131.909317], { hintContent: 'ТЦ «Море», Гипермаркет (ул. Некрасовская, 49а)' }),
-                '3': new ymaps.Placemark([43.24827778336888, 132.02109573106299], { hintContent: 'ул. Тимирязева,31 строение 1 (район Спутник)' }),
-                '6': new ymaps.Placemark([43.181235883133674, 131.9154298472213], { hintContent: 'Заря (Чкалова, 30)' })
+                '3': new ymaps.Placemark([43.24827778336888, 132.02109573106299], { hintContent: 'ул. Тимирязева,31 строение 1 (район Спутник)' })
             };
 
             var myGroup = new ymaps.GeoObjectCollection({}, { draggable: false, preset: 'islands#blueIcon', iconColor: '#3caa3c' });

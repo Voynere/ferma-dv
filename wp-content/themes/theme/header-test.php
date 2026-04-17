@@ -1875,7 +1875,7 @@
         <h2 class="modal-delivery__selfpickup-title">Выбор магазина </h2>
         <h5 class="modal-delivery__selfpickup-city">Владивосток:</h5>
         <div id="market1" class="market_el">
-            <p class="modal-delivery__selfpickup-adress">Эгершельд, Верхнепортовая,68а</p>
+            <p class="modal-delivery__selfpickup-adress">Эгершельд, Верхнепортовая,41в</p>
             <div class="mainblock_time1 enable1" data-market="11" style="">
             <div class="underblocktime1" style="">
                 <p class="delivery-text modal-delivery__selfpickup-btn" style="margin-bottom:0px;">Выбрать</p>
@@ -1896,15 +1896,6 @@
         <div id="market1" class="market_el">
             <p class="modal-delivery__selfpickup-adress">Реми-Сити (ул. Народный пр-т, 20)</p>
             <div class="mainblock_time1 enable1" data-market="1"  style="">
-            <div class="underblocktime1" style="">
-                <p class="delivery-text modal-delivery__selfpickup-btn"style="margin-bottom:0px;">Выбрать</p>
-            </div>
-        </div>
-        </div>
-        
-        <div id="market5" class="market_el">
-            <p class="modal-delivery__selfpickup-adress">Заря (ул. Чкалова, 30)</p>
-            <div class="mainblock_time1 enable1" data-market="6"  style="">
             <div class="underblocktime1" style="">
                 <p class="delivery-text modal-delivery__selfpickup-btn"style="margin-bottom:0px;">Выбрать</p>
             </div>
@@ -2011,7 +2002,7 @@
             map2.setCenter(coords, 16);
             }
     var myPlacemark11 = new ymaps.Placemark([43.09968, 131.863907], {
-        hintContent: 'Эгершельд, Верхнепортовая,68а'
+        hintContent: 'Эгершельд, Верхнепортовая,41в'
     }, {
         balloonContentLayout: null
     });
@@ -2040,12 +2031,6 @@
         balloonContentLayout: null
     });*/
     
-    var myPlacemark6 = new ymaps.Placemark([43.181235883133674,131.9154298472213], {
-        hintContent: 'Заря (Чкалова, 30)'
-    }, {
-        balloonContentLayout: null
-    });
-    
 	<? if(1==2): ?>
     var myPlacemark7 = new ymaps.Placemark([42.835890249518116,132.8823348368053], {
         hintContent: 'Находка, Проспект мира, 65/1'
@@ -2069,8 +2054,7 @@
     myGroup.add(myPlacemark11)
         .add(myPlacemark1)
         .add(myPlacemark2)
-        .add(myPlacemark3)
-        .add(myPlacemark6);
+        .add(myPlacemark3);
     
     map2.geoObjects.add(myGroup);
     // Вешаем обработчик на клик по метке
@@ -2181,20 +2165,6 @@
                     console.log(fullAddress);
                     });
                 map2.setCenter(myPlacemark5.geometry.getCoordinates());
-                    // Устанавливаем масштаб
-                    map2.setZoom(15);
-
-        }
-        
-        if (dataMarket == 6) {
-                myPlacemark6.options.set('iconColor', '#ff0000');
-                document.getElementById('samoviziv').innerHTML = myPlacemark6.properties.get('hintContent');
-                ymaps.geocode(myPlacemark6.geometry.getCoordinates()).then(function (res) {
-                    var fullAddress = res.geoObjects.get(0).getAddressLine();
-                    document.getElementById('suggest').value = fullAddress;
-                    console.log(fullAddress);
-                    });
-                map2.setCenter(myPlacemark6.geometry.getCoordinates());
                     // Устанавливаем масштаб
                     map2.setZoom(15);
 

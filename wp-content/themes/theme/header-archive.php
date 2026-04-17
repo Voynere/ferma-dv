@@ -641,7 +641,7 @@ a.xoo-wsc-ft-btn.button.btn.xoo-wsc-ft-btn-checkout { background: #4caf50; color
     <h2 class="modal-delivery__selfpickup-title">Выбор магазина</h2>
     <h5 class="modal-delivery__selfpickup-city">Владивосток:</h5>
     <div id="market_egersheld" class="market_el">
-        <p class="modal-delivery__selfpickup-adress">Эгершельд, Верхнепортовая,68а</p>
+        <p class="modal-delivery__selfpickup-adress">Эгершельд, Верхнепортовая,41в</p>
         <div class="mainblock_time1 enable1" data-market="11"><div class="underblocktime1"><p class="delivery-text modal-delivery__selfpickup-btn" style="margin-bottom:0px;">Выбрать</p></div></div>
     </div>
     <script>
@@ -652,10 +652,6 @@ a.xoo-wsc-ft-btn.button.btn.xoo-wsc-ft-btn-checkout { background: #4caf50; color
     <div id="market_remicity" class="market_el">
         <p class="modal-delivery__selfpickup-adress">Реми-Сити (ул. Народный пр-т, 20)</p>
         <div class="mainblock_time1 enable1" data-market="1"><div class="underblocktime1"><p class="delivery-text modal-delivery__selfpickup-btn" style="margin-bottom:0px;">Выбрать</p></div></div>
-    </div>
-    <div id="market_zarya" class="market_el">
-        <p class="modal-delivery__selfpickup-adress">Заря (ул. Чкалова, 30)</p>
-        <div class="mainblock_time1 enable1" data-market="6"><div class="underblocktime1"><p class="delivery-text modal-delivery__selfpickup-btn" style="margin-bottom:0px;">Выбрать</p></div></div>
     </div>
     <div id="market_sputnik" class="market_el">
         <p class="modal-delivery__selfpickup-adress">ул. Тимирязева,31 строение 1 (район Спутник)</p>
@@ -689,14 +685,13 @@ function init() {
         }
     });
 
-    var myPlacemark11 = new ymaps.Placemark([43.09968, 131.863907], { hintContent: 'Эгершельд, Верхнепортовая,68а' }, { balloonContentLayout: null });
+    var myPlacemark11 = new ymaps.Placemark([43.09968, 131.863907], { hintContent: 'Эгершельд, Верхнепортовая,41в' }, { balloonContentLayout: null });
     var myPlacemark1 = new ymaps.Placemark([43.128381, 131.919746], { hintContent: 'Реми-Сити (ул. Народный пр-т, 20)' }, { balloonContentLayout: null });
     var myPlacemark3 = new ymaps.Placemark([43.24827778336888, 132.02109573106299], { hintContent: 'ул. Тимирязева,31 строение 1 (район Спутник)' }, { balloonContentLayout: null });
-    var myPlacemark6 = new ymaps.Placemark([43.181235883133674,131.9154298472213], { hintContent: 'Заря (Чкалова, 30)' }, { balloonContentLayout: null });
     var myPlacemark8 = new ymaps.Placemark([43.132657, 131.905418], { hintContent: 'Океанский проспект 108' }, { balloonContentLayout: null });
 
     var myGroup = new ymaps.GeoObjectCollection({}, { draggable: false, preset: 'islands#blueIcon', iconColor: '#3caa3c' });
-    myGroup.add(myPlacemark11).add(myPlacemark1).add(myPlacemark3).add(myPlacemark6).add(myPlacemark8);
+    myGroup.add(myPlacemark11).add(myPlacemark1).add(myPlacemark3).add(myPlacemark8);
     map2.geoObjects.add(myGroup);
 
     myGroup.events.add('click', function (e) {
@@ -717,7 +712,7 @@ function init() {
     });
 
     /* FIX: маппинг data-market → placemark, убраны несуществующие метки */
-    var placemarkMap = { '11': myPlacemark11, '1': myPlacemark1, '3': myPlacemark3, '6': myPlacemark6, '8': myPlacemark8 };
+    var placemarkMap = { '11': myPlacemark11, '1': myPlacemark1, '3': myPlacemark3, '8': myPlacemark8 };
 
     document.querySelectorAll('.mainblock_time1').forEach(function(button) {
         button.addEventListener('click', function() {
